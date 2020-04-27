@@ -1,5 +1,7 @@
 @media(max-width: 1499px){
-
+	.container{
+		max-width: 1200px;
+	}
 }
 
 @media(max-width: 1399px){
