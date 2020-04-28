@@ -84,11 +84,11 @@
 	width: 40%;
 	float: right;
 }
-.fc-contact-info-inr{
-	display: flex;
-	justify-content: left;
-	align-items: center;
-	padding: 30px 0;
+.fc-contact-info-inr {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 12px 0 48px;
 }
 .fc-contact-info-icon{
 	width: 90px;
@@ -106,6 +106,10 @@
 	display: inline-block;
 	vertical-align: baseline;
 	text-decoration: none;
+}
+.fc-contact-info-dsc a:hover,
+.fc-contact-info-icon a:hover{
+	color:#EFBBB1; 
 }
 .fc-contact-info-dsc{
 	float: left;
@@ -129,4 +133,101 @@
 	line-height: 30px;
 	color: #333333;
 	font-weight: 300;
+}
+
+/*
+------------------
+ Responsive Css
+------------------
+*/
+
+@media(max-width: 1199px){
+	.contact-form-lft {
+	    padding-right: 70px;
+	}
+	.contact-form-title-1,
+	.contact-form-title {
+	    font-size: 27px;
+	    line-height: 29px;
+	    margin-bottom: 40px;
+	}
+}
+
+@media(max-width: 991px){
+   .contact-form-wrp{
+   		max-width: 500px;
+   		width: 100%;
+   		margin: 0 auto;
+   }
+  .contact-form-lft {
+	    padding-right: 0;
+	    width: 100%;
+	} 
+	.contact-form-rgt {
+	    width: 100%;
+	    padding-top: 40px;
+	}
+	.contact-form-title-1,
+	.contact-form-title {
+	    font-size: 26px;
+	    line-height: 28px;
+	    margin-bottom: 30px;
+	}
+	.contact-form-title-1{
+		margin-bottom: 20px;
+	}
+	.fc-contact-info-inr {
+	    padding: 12px 0 30px;
+	}
+}
+
+@media(max-width: 767px){
+  .contact-form-title-1,
+	.contact-form-title {
+	    font-size: 25px;
+	    line-height: 27px;
+	}
+	.fc-contact-info-title {
+	    font-size: 17px;
+	    line-height: 19px;
+	}
+	.fc-contact-info-dsc a {
+	    font-size: 18px;
+	    line-height: 28px;
+	}
+	.contact-form-sec-wrp {
+	    padding-top: 90px;
+	    padding-bottom: 50px;
+	}
+	
+}
+
+@media(max-width: 575px){
+  .contact-form-title-1,
+	.contact-form-title {
+	    font-size: 24px;
+	    line-height: 26px;
+	}
+
+}
+
+@media(max-width: 479px){
+	.fc-contact-info-inr {
+	    padding: 0 0 25px;
+	    display: block;
+	}
+	.fc-contact-info-dsc {
+	    float: left;
+	    padding-top: 25px;
+	    padding-left: 0;
+	    display: block;
+	    width: 100%;
+	}
+	.contact-form-title-1{
+		margin-bottom: 35px;
+	}
+}
+
+@media(max-width: 359px){
+
 }
