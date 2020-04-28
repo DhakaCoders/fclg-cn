@@ -247,6 +247,13 @@ nav.main-nav ul.sub-menu li:hover:before {
 }
 
 
+.hdr-navbar-bdr-cntlr .hdr-rating{
+	display: none;
+}
+
+
+
+
 @media(max-width: 1499px){
 
 }
@@ -556,12 +563,39 @@ nav.main-nav ul.sub-menu li:hover:before {
 }
 
 @media(max-width: 575px){
-
-
+	.hdr-topbar-inr .hdr-rating{
+		display: none;
+	}
+	.hdr-navbar-bdr-cntlr .hdr-rating {
+		display: flex;
+		position: absolute;
+		left: 15px;
+		right: 15px;
+		bottom: 6px;
+		z-index: 3;
+		align-items: center;
+		justify-content: center;
+		font-size: 14px;
+	}
+	.hdr-topbar{
+		padding-left: 0;
+	}
+	.hdr-topba-rgt{
+		margin-left: 0;
+	}
+	.hdr-login-register-btns a:first-child{
+		margin-left: 1px;
+	}
 }
 
 @media(max-width: 479px){
-
+	.logo a {
+	    max-width: 190px;
+	}
+	.hdr-navbar{
+		min-height: 95px;
+	}
+	
 
 }
 

@@ -40,6 +40,10 @@
 	.show-sm{
 		display: block!important;
 	}
+	.default-page-con ol li::before, ol li::before{
+		font-size: 18px;
+		top: 8px
+	}
 }
 
 @media(max-width: 575px){
