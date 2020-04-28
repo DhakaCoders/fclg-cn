@@ -22,7 +22,7 @@
 	padding-bottom: 8px;
 	display: flex;
 	align-items: center;
-	min-height: 42px;
+	min-height: 41px;
 }
 .hdr-rating ul{
 	padding-left: 6px;
@@ -31,6 +31,9 @@
 .hdr-rating ul li{
 	display: inline-block;
 	vertical-align: baseline;
+	color: #F7CE28;
+}
+.hdr-rating ul li a{
 	color: #F7CE28;
 }
 .hdr-rating span u{
