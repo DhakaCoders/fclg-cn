@@ -1,0 +1,96 @@
+/*
+-------------------
+faq-accordion-tab-sec-wrp
+-------------------
+*/
+.faq-accordion-tab-sec-wrp{
+	background: #eaeaea;
+	padding-top: 80px;
+	padding-bottom: 55px;
+}
+.faq-accordion-title{
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 500;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    margin: 0;
+    border-bottom: 1px solid #d6d6d6;
+    position: relative;
+    cursor: pointer;
+}
+.faq-accordion-title.faq-accordion-active {
+    border-bottom: none!important;
+}
+.faq-accordion-des {
+    border-bottom: 1px solid #d6d6d6;
+    margin-top: -10px;
+}
+.faq-accordion-title:after{
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	background: url(../images/close-Icon.png);
+	width: 21px;
+	height: 21px;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.faq-accordion-title.faq-accordion-active:after{
+	background: url(../images/open-icon.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.faq-accordion-title{
+	padding-left: 35px;
+	padding-right: 35px;
+}
+.faq-accordion-des div p {
+    font-size: 16px;
+    line-height: 30px;
+    padding-bottom: 25px;
+}
+
+/*
+----------------------
+fc-looking-head-sec-wrp
+----------------------
+*/
+.fc-looking-head-sec-wrp{
+	padding-top: 60px;
+	padding-bottom: 50px;
+}
+.fc-looking-head-wrp{
+	text-align: center;
+}
+.fc-looking-head-title{
+	font-size: 20px;
+	line-height: 22px;
+	color: #212529;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	display: block;
+	margin-bottom: 25px;
+}
+.fc-looking-head-wrp a{
+	display: inline-block;
+	vertical-align: baseline;
+	text-decoration: none;
+	background: #70BA61;
+	border:2px solid#70BA61;
+	padding: 12px 25px;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 600;
+}
+.fc-looking-head-wrp a:hover{
+	background: transparent;
+	color: #70BA61;
+}
