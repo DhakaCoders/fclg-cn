@@ -177,6 +177,29 @@ google.maps.event.addDomListener(window, 'load', initialize);
 /*Rannojit*/
 
 
+if (windowWidth <= 991) {
+  $('.hdr-humberger').on('click', function(e){
+    $('.main-nav-cntlr').addClass('opacity-1');
+    $('.bdoverlay').addClass('active');
+    $('body').addClass('active-scroll-off');
+    //$(this).addClass('active-collapse');
+  });
+  $('.closebtn').on('click', function(e){
+    $('.bdoverlay').removeClass('active');
+    $('.main-nav-cntlr').removeClass('opacity-1');
+    $('body').removeClass('active-scroll-off');
+    $('.line-icon').removeClass('active-collapse');
+  });
+  
+  $('.main-nav-cntlr li.menu-item-has-children > a').on('click', function(e){
+    e.preventDefault();
+    //$('li.menu-item-has-children .sub-menu').slideUp(300);
+    $(this).toggleClass('sub-menu-active');
+    //$(this).next().slideDown(300);
+    $(this).next().slideToggle(300);
+
+  });
+}
 
 
 })(jQuery);
