@@ -26,37 +26,40 @@
 	height: 16px;
 }
 
-
+ul, ol{
+	font-size: 18px;
+	line-height: 1.2;
+}
 
 .default-page-con ul, ul{
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	padding-left: 25px;
+	padding-left: 0;
 	padding-bottom: 10px;
 	padding-top: 10px;
 }
 .default-page-con ul li,
 ul li {
-	padding: 0 0 32px 42px;
+	padding: 0 0 40px 25px;
 	position: relative;
 }
 
-.default-page-con ul li::before,
-ul li::before {
-	content: "";
-	position: absolute;
-	left: 0;
-	top: 8px;
-	background: url(../images/list-icon.svg);
-	background-repeat: no-repeat;
-	background-size: 100% auto;
-	width: 24px;
-	height: 2px;
+.default-page-con ul li::before, ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10px;
+    background: url(../images/list-icon.svg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    width: 20px;
+    height: 2px;
 }
 
+
 .default-page-con ol, ol {
-	padding: 0 0 0 25px;
+	padding: 0 0 0 0;
 	list-style: none;
 	counter-reset: my-awesome-counter;
 	-ms-counter-reset: my-awesome-counter;
@@ -66,30 +69,22 @@ ul li::before {
 	counter-increment: my-awesome-counter;
 	-ms-counter-increment: my-awesome-counter;
 	-webkit-counter-increment: my-awesome-counter;
-	padding-bottom: 24px;
-	line-height: 24px;
-	padding-left: 40px;
+	padding: 0 0 40px 25px;
 	position: relative;
 }
 
 .default-page-con ol li::before,
 ol li::before {
-	content: counter(my-awesome-counter) "";
-	color: #F3BA4B;
+	content: counter(my-awesome-counter) ".";
+	color: #DF0025;
 	font-weight: 800;
-	width: 27px!important;
-	height: 27px!important;
-	border: 2px solid #F3BA4B;
-	font-size: 16px;
+	font-size: 22px;
 	line-height: 1px;
-	text-align: center;
-	padding: 0 5.5px;
-	border-radius: 8px;
+	text-align: left;
 	position: absolute;
 	left: 0;
-	top: 0;
+	top: 10px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding-top: 3px;
 }

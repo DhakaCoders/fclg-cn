@@ -154,8 +154,11 @@ nav.main-nav > ul > li{
 	display: inline-block;
 	vertical-align: baseline;
 	position: relative;
-	padding: 30px 4px 25px;
+	padding: 30px 15px 25px;
 	text-transform: uppercase;
+}
+nav.main-nav > ul > li:first-child{
+	padding-left: 0;
 }
 nav.main-nav > ul > li > a{
 	color: #fff;

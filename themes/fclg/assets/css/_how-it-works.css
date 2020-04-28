@@ -1,0 +1,68 @@
+.how-it-works-section,
+.about-us-section{
+	background-repeat: no-repeat!important;
+	background-position: right bottom!important;
+	padding-bottom: 45px;
+}
+.about-us-section{
+	padding-bottom: 60px;
+}
+
+.hiwshder-title{
+	display: inline-block;
+	vertical-align: baseline;
+	font-size: 26px;
+	line-height: 1;
+	text-transform: uppercase;
+	padding: 15px 50px 15px 15px;
+	background: #d70216;
+	color: #fff;
+	text-transform: uppercase;
+	position: relative;
+	margin: 0;
+}
+.hiwshder-title:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -41px;
+    bottom: 0;
+    border-right: 41px solid transparent;
+    border-left: 50px solid transparent;
+    border-top: 56px solid #d70216;
+}
+
+.how-it-works-sec-des,
+.about-us-sec-des{
+	padding: 55px 0 0 0;
+}
+.hiwsd-title{
+	font-weight: 700;
+	font-size: 34px;
+	line-height: 1.3;
+	margin-bottom: 55px;
+}
+.hiwsd-title em{
+	font-style: italic;
+	color: #DF0025;
+	display: block;
+}
+
+.hiwsd-subtitle{
+	display: block;
+	font-size: 22px;
+	line-height: 1;
+	font-weight: 600;
+	display: block;
+	padding: 0 0 35px 0;
+	margin: 0;
+}
+
+.hiwsd-txt{
+	max-width: 550px;
+}
+
+.ausd-txt{
+	max-width: 619px;
+}
+

@@ -29,6 +29,9 @@ p{
 	line-height: 30px;
 	margin-bottom: 15px;
 }
+a{
+	color: #B20026;
+}
 /*-- app gap use pattern --*/
 /*data-xxs = 575
 data-xs = 767
