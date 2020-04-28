@@ -127,8 +127,9 @@ fc-looking-head-sec-wrp
 }
 
 @media(max-width: 479px){
-
-
+	.fc-contact-form-msg-field textarea {
+	    height: 150px;
+	}
 }
 
 @media(max-width: 359px){
