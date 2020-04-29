@@ -1,0 +1,107 @@
+/*
+-----------------------
+.fc-cw-post-grid-sec-wrp
+-----------------------
+*/
+.fc-cw-post-grid-sec-wrp{
+	padding-top: 100px;
+	padding-bottom: 80px;
+	background: #eaeaea;
+ }
+ .fc-cw-post-grid-wrp ul{
+ 	margin: 0 -5px;
+ }
+.fc-cw-post-grid-wrp ul li{
+	width: 25%;
+	float: left;
+	padding: 0 5px 20px;
+}
+.fc-cw-post-grid-wrp ul li:nth-child(4n+1){
+	clear: left;
+}
+.fc-cw-post-grid-img-cntrl{
+	position: relative;
+	overflow: hidden;
+}
+.fc-cw-post-grid-img{
+	height: 215px !important;
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+	background-position: center center !important;
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+}
+.fc-cw-post-grid-dsc-title{
+	font-size: 22px;
+	line-height: 26px;
+	color: #D60215;
+	font-weight: 600;
+	font-family: 'Work Sans', sans-serif;
+	display: block;
+	margin-bottom:0;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+}
+.fc-cw-post-grid-dsc-title a{
+	color: inherit;
+	display: inline-block;
+	vertical-align: baseline;
+	text-decoration: none;
+}
+.fc-cw-post-grid-dsc-title:hover a{
+	color: #EFBBB1;
+}
+.fc-cw-post-grid-dsc{
+	padding: 15px 10px 15px;
+	background: #fff;
+}
+.fc-cw-post-grid-dsc span{
+	display: inline-block;
+	vertical-align: baseline;
+	font-size: 16px;
+	line-height: 18px;
+	color: #1B1C20;
+	font-weight: 400;
+}
+.vn-modal-con-wrap .modal-title{
+	display: block;
+	font-size: 26px;
+	line-height: 28px;
+	font-weight: 600;
+	color: #D60215;
+	font-family: 'Work Sans', sans-serif;
+}
+.vn-modal-con-wrap .modal-header{
+	padding: 25px 15px 20px;
+}
+.vn-modal-con-wrap .modal-content{
+	border:0;
+	border-radius: 0;
+}
+.vn-modal-con-wrap .modal-body span{
+	display: block;
+	font-size: 16px;
+	line-height: 32px;
+	font-weight: 400;
+	color: #212529;
+	padding-bottom: 10px;
+}
+.vn-modal-con-wrap .modal-body{
+    padding: 20px 15px 10px;
+}
+.vn-modal-con-wrap .modal-footer{
+	margin: 5px 15px 0;
+	padding-right: 0;
+}
+
+.vn-modal-con-wrap .btn-secondary {
+    color: #fff;
+    background-color: #70BA61;
+    border:2px solid#70BA61;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    padding: 6px 18px;
+}

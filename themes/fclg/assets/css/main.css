@@ -9,6 +9,9 @@
 /*milon*/
 @import url('_contact.css');
 @import url('_footer.css');
+@import url('_faq.css');
+@import url('_entry-list.css');
+@import url('_competition-winners.css');
 
 
 
@@ -24,6 +27,6 @@
 
 
 
-@import url('_faq.css');
+
 
 

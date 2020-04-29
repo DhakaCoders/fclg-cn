@@ -1,0 +1,109 @@
+/*
+-------------------------
+fc-enty-list-box-sec-wrp
+-------------------------
+*/
+.fc-enty-list-box-sec-wrp{
+	background: #eaeaea;
+	padding-top: 120px;
+	padding-bottom: 70px;
+}
+.fc-enty-list-box-wrp ul{
+	margin-left: -10px;
+	margin-right: -10px;
+}
+.fc-enty-list-box-wrp ul li{
+	width: 33.3333%;
+	float: left;
+	padding: 0 10px 20px;
+}
+.fc-enty-list-box-wrp ul li:nth-child(3n+1){
+	clear: left;
+}
+.fc-enty-list-box-inr{
+	background: url(../images/entry-list-box-bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	min-height: 250px;
+	padding: 35px 20px;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+    -webkit-box-shadow: 0px 0px 14px -6px;
+    -moz-box-shadow: 0px 0px 14px -6px;
+    box-shadow: 0px 0px 14px -6px;
+}
+.fc-enty-list-box-dsc-title{
+	display: block;
+	font-size: 20px;
+	line-height: 22px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	margin-bottom: 14px;
+}
+.fc-enty-list-box-dsc span{
+	display: block;
+	font-size: 18px;
+	line-height: 20px;
+	font-weight: 400;
+	color: #333333;
+	padding-bottom: 16px;
+}
+.fc-enty-list-box-dsc u{
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 300;
+	color: #D60215;
+	font-family: 'Work Sans', sans-serif;
+	display:block;
+	padding-bottom: 15px;
+}
+.fc-enty-list-box-dsc a{
+	display: inline-block;
+	vertical-align: baseline;
+	text-decoration: none;
+	font-size: 12px;
+	line-height: 14px;
+	font-weight: 600;
+	color: #fff;
+	background: #70ba61;
+	padding: 10px 20px;
+	border:2px solid #70ba61;
+}
+.fc-enty-list-box-dsc a:hover{
+	background: transparent;
+	color: #70ba61;
+}
+.fc-pagination-wrp{
+	padding-top: 25px;
+}
+.fc-pagination-wrp ul li{
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 600;
+	float: left;
+}
+.fc-pagination-wrp ul li a{
+	display: inline-block;
+	vertical-align: baseline;
+	text-decoration: none;
+	color: #A0A0A0;
+	width: 35px;
+	height: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Work Sans', sans-serif;
+	border:1px solid#b8b8b8;
+	border-left: 0;
+}
+.fc-pagination-wrp ul li:first-child a{
+	border-left: 1px solid#b8b8b8;
+}
+.fc-pagination-wrp ul li a.active,
+.fc-pagination-wrp ul li a:hover{
+	background: #DF0025;
+	color: #fff;
+	border-color: #1A1C20;
+}
