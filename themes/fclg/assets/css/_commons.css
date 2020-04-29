@@ -321,3 +321,14 @@ form .dropdown-menu li a{
 .dropdown-menu.show{
 	width: 100%;
 }
+
+
+.proGallerySlider .proGallerySlideItem{
+	display: none;
+}
+.proGallerySlider .proGallerySlideItem:first-child{
+	display: block;
+}
+.proGallerySlider.slick-initialized .proGallerySlideItem{
+	display: block;
+}
