@@ -32,6 +32,9 @@ p{
 a{
 	color: #B20026;
 }
+a:hover{
+	color: #000;
+}
 /*-- app gap use pattern --*/
 /*data-xxs = 575
 data-xs = 767
