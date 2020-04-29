@@ -202,4 +202,15 @@ if (windowWidth <= 991) {
 }
 
 
+var proTitleHeight = $('.fl-pro-grd-item-title').outerHeight();
+var proTitleHeightHalf = (proTitleHeight/2);
+$('.title-angle').css({"border-top-width": proTitleHeightHalf, "border-right-width": proTitleHeightHalf, "border-bottom-width": proTitleHeightHalf});
+
+$( window ).resize(function() {
+  var proTitleHeight = $('.fl-pro-grd-item-title').outerHeight();
+  var proTitleHeightHalf = (proTitleHeight/2);
+  $('.title-angle').css({"border-top-width": proTitleHeightHalf, "border-right-width": proTitleHeightHalf, "border-bottom-width": proTitleHeightHalf});
+});
+
+
 })(jQuery);
