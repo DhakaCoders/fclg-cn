@@ -323,12 +323,15 @@ form .dropdown-menu li a{
 }
 
 
-.proGallerySlider .proGallerySlideItem{
+.proGallerySlider .proGallerySlideItem,
+.flProGgalleryThumbPagi .flProGgalleryThumbPagi-item{
 	display: none;
 }
-.proGallerySlider .proGallerySlideItem:first-child{
+.proGallerySlider .proGallerySlideItem:first-child,
+.flProGgalleryThumbPagi .flProGgalleryThumbPagi-item:first-child{
 	display: block;
 }
-.proGallerySlider.slick-initialized .proGallerySlideItem{
+.proGallerySlider.slick-initialized .proGallerySlideItem,
+.flProGgalleryThumbPagi.slick-initialized .flProGgalleryThumbPagi-item{
 	display: block;
 }
