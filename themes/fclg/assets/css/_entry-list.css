@@ -25,7 +25,6 @@ fc-enty-list-box-sec-wrp
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
-	min-height: 250px;
 	padding: 35px 20px;
 	display: flex;
 	justify-content: left;
@@ -34,13 +33,15 @@ fc-enty-list-box-sec-wrp
     -moz-box-shadow: 0px 0px 14px -6px;
     box-shadow: 0px 0px 14px -6px;
 }
-.fc-enty-list-box-dsc-title{
-	display: block;
-	font-size: 20px;
-	line-height: 22px;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 700;
-	margin-bottom: 14px;
+.fc-enty-list-box-dsc-title {
+    font-size: 20px;
+    line-height: 22px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-bottom: 14px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
 }
 .fc-enty-list-box-dsc span{
 	display: block;
@@ -106,4 +107,86 @@ fc-enty-list-box-sec-wrp
 	background: #DF0025;
 	color: #fff;
 	border-color: #1A1C20;
+}
+
+/*
+------------------
+ Responsive Css
+------------------
+*/
+
+@media(max-width: 1199px){
+  
+
+}
+
+@media(max-width: 991px){
+	.fc-enty-list-box-wrp ul li {
+	    width: 50%;
+	}
+	.fc-enty-list-box-wrp ul li:nth-child(3n+1){
+	    clear: none;
+	}
+	.fc-enty-list-box-wrp ul li:nth-child(2n+1){
+	    clear: left;
+	}
+	.fc-enty-list-box-inr {
+	    padding: 30px 15px;
+	}
+}
+
+@media(max-width: 767px){
+	.fc-enty-list-box-dsc-title {
+	    font-size: 18px;
+	    line-height: 20px;
+	    margin-bottom: 10px;
+	}
+	.fc-enty-list-box-inr {
+	    padding: 30px 10px;
+	}
+	.fc-enty-list-box-dsc span {
+	    font-size: 16px;
+	    line-height: 18px;
+	    padding-bottom: 12px;
+	}
+	.fc-enty-list-box-dsc u {
+	    font-size: 14px;
+	    line-height: 16px;
+	    padding-bottom: 12px;
+	}
+	.fc-enty-list-box-sec-wrp {
+	    padding-top: 100px;
+	    padding-bottom: 60px;
+	}
+}
+
+@media(max-width: 575px){
+	.fc-enty-list-box-wrp ul li {
+	    width: 100%;
+	}
+	.fc-enty-list-box-wrp ul li:nth-child(2n+1){
+	    clear: none;
+	}
+	.fc-enty-list-box-wrp{
+		max-width: 500px;
+		width: 100%;
+		margin: 0 auto;
+	}
+	.fc-enty-list-box-wrp {
+	    max-width: 380px;
+	    width: 100%;
+	    margin: 0 auto;
+	}
+	.fc-pagination-wrp ul{
+		display: table;
+		margin: 0 auto;
+	}
+}
+
+@media(max-width: 479px){
+	
+}
+
+@media(max-width: 359px){
+
 }
