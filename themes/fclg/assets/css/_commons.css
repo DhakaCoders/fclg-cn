@@ -32,6 +32,9 @@ p{
 a{
 	color: #B20026;
 }
+a:hover{
+	color: #000;
+}
 /*-- app gap use pattern --*/
 /*data-xxs = 575
 data-xs = 767
@@ -317,4 +320,15 @@ form .dropdown-menu li a{
 }
 .dropdown-menu.show{
 	width: 100%;
+}
+
+
+.proGallerySlider .proGallerySlideItem{
+	display: none;
+}
+.proGallerySlider .proGallerySlideItem:first-child{
+	display: block;
+}
+.proGallerySlider.slick-initialized .proGallerySlideItem{
+	display: block;
 }

@@ -1,20 +1,19 @@
 .slick-slider ul.slick-dots{
 	position: static;
-	height: 16px;
 	line-height: 0;
 	padding: 0 20px!important;
 }
 .slick-slider .slick-dots li{
-	width: 16px!important;
-	height: 16px!important;
+	width: 14px!important;
+	height: 14px!important;
 	position: static;
-	background: #E1E1E1!important;
+	background: #AD8175!important;
 	border-radius: 100% 100%!important;
 	margin: 0 8px;
 	padding: 0!important;
 }
 .slick-slider .slick-dots li.slick-active{
-	background: #F3BA4B!important;
+	background: #D60215!important;
 }
 .slick-slider .slick-dots li:before,
 .slick-slider .slick-dots li button:before{
@@ -22,9 +21,59 @@
 }
 .slick-slider .slick-dots li button{
 	padding: 0;
-	width: 16px;
-	height: 16px;
+	width: 14px;
+	height: 14px;
 }
+
+
+
+
+
+
+.slick-prev,
+.slick-next{
+	width: 30px;
+	height: 30px;
+	background-size: 13px 14px;
+	cursor: pointer;
+	z-index: 20;
+	opacity: 1;
+	border: 1px solid #B20026;
+}
+.slick-prev{
+	left: 0;
+	background: url(../images/prev-arrow-black.png)!important;
+	background-repeat: no-repeat!important;
+	background-position: center center!important;
+	background-size: 13px 14px!important;
+}
+.slick-next{
+	right: 0;
+	background: url(../images/next-arrow-black.png)!important;
+	background-repeat: no-repeat!important;
+	background-position: center center!important;
+	background-size: 13px 14px!important;
+}
+.slick-prev:before,
+.slick-next:before{
+	content: none;
+}
+.slick-prev:hover{
+	background: url(../images/prev-arrow-black-hover.png)!important;
+	background-repeat: no-repeat!important;
+	background-position: center center!important;
+	background-size: 13px 14px!important;
+}
+.slick-next:hover{
+	background: url(../images/next-arrow-black-hover.png)!important;
+	background-repeat: no-repeat!important;
+	background-position: center center!important;
+	background-size: 13px 14px!important;
+}
+
+
+
+
 
 ul, ol{
 	font-size: 18px;
@@ -41,20 +90,16 @@ ul, ol{
 }
 .default-page-con ul li,
 ul li {
-	padding: 0 0 40px 25px;
+	padding: 0 0 15px 13px;
 	position: relative;
 }
 
 .default-page-con ul li::before, ul li::before {
-    content: "";
+    content: "•";
     position: absolute;
     left: 0;
-    top: 10px;
-    background: url(../images/list-icon.svg);
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    width: 20px;
-    height: 2px;
+    top: -1px;
+    line-height: 1;
 }
 
 

@@ -8,7 +8,7 @@ a,input,img,textarea,button,svg{
 	-webkit-transition: all 0.5s;
 }
 .fc-cw-post-grid-inr:hover .fc-cw-post-grid-img,
-.scale{
+.scale,.fl-pro-grd-item-fea-img a:hover img{
 	transform: scale(1.1);
 	-ms-transform: scale(1.1);
 	-webkit-transform: scale(1.1);
