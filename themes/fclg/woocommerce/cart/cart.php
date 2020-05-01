@@ -18,7 +18,7 @@
 defined( 'ABSPATH' ) || exit;
 
 do_action( 'woocommerce_before_cart' ); ?>
-<div class="cart-wrapp">
+<div class="cart-wrapp clearfix">
 <div class="cart-form">
 <h3 class="carttitle">Items</h3>
 <form class="woocommerce-cart-form" action="<?php echo esc_url( wc_get_cart_url() ); ?>" method="post">
@@ -29,9 +29,9 @@ do_action( 'woocommerce_before_cart' ); ?>
 			<tr>
 				<th class="product-remove">&nbsp;</th>
 				<th class="product-thumbnail">&nbsp;</th>
-				<th class="product-name"><?php esc_html_e( 'Product', 'woocommerce' ); ?></th>
+				<th class="product-name"><?php esc_html_e( 'Competition', 'woocommerce' ); ?></th>
 				<th class="product-price"><?php esc_html_e( 'Price', 'woocommerce' ); ?></th>
-				<th class="product-quantity"><?php esc_html_e( 'Quantity', 'woocommerce' ); ?></th>
+				<th class="product-quantity"><?php esc_html_e( 'Tickets', 'woocommerce' ); ?></th>
 				<th class="product-subtotal"><?php esc_html_e( 'Subtotal', 'woocommerce' ); ?></th>
 			</tr>
 		</thead>
@@ -113,7 +113,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 
 						<td class="product-quantity" data-title="<?php esc_attr_e( 'Quantity', 'woocommerce' ); ?>">
 					    <div class="qty">
-                            <span class="minus"><img src="<?php echo THEME_URI; ?>/assets/images/caret-up.png"></span>
+                            <span class="minus"><img src="<?php echo THEME_URI; ?>/assets/images/caret-up-2.png"></span>
 						<?php
 						if ( $_product->is_sold_individually() ) {
 							$product_quantity = sprintf( '1 <input type="hidden" name="cart[%s][qty]" value="1" />', $cart_item_key );
@@ -133,7 +133,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 
 						echo apply_filters( 'woocommerce_cart_item_quantity', $product_quantity, $cart_item_key, $cart_item ); // PHPCS: XSS ok.
 						?>
-		                  <span class="plus"><img src="<?php echo THEME_URI; ?>/assets/images/caret-down.png"></span>
+		                  <span class="plus"><img src="<?php echo THEME_URI; ?>/assets/images/caret-down-2.png"></span>
 		                </div>
 						</td>
 

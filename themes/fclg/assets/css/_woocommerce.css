@@ -781,6 +781,20 @@ input.select2-search__field{
 	justify-content: flex-end;
 	display: flex;
 }*/
+
+.cart-form{
+	float: left;
+	width: 75%;
+	padding-right: 20px;
+}
+.cart-wrapp .cart-collaterals{
+	float: left!important;
+	width: 25%!important;
+}
+.cart-wrapp .cart-collaterals .cart_totals {
+	width: 100%!important;
+}
+
 @media(max-width: 991px){
 	.woocommerce #customer_details .col-1,
 	.woocommerce #customer_details .col-2 {
