@@ -29,7 +29,7 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 
 ?>
 
-<div class="checkout-form-cntlr">
+<div class="fl-oocommerce-billing-cntlr">
 	<form name="checkout" method="post" class="checkout woocommerce-checkout" action="<?php echo esc_url( wc_get_checkout_url() ); ?>" enctype="multipart/form-data">
 
 		<?php if ( $checkout->get_checkout_fields() ) : ?>
@@ -38,11 +38,15 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 
 			<div class="col2-set" id="customer_details">
 				<div class="col-1">
-					<?php do_action( 'woocommerce_checkout_billing' ); ?>
+					<div class="checkout-billing-form-cntlr">
+						<?php do_action( 'woocommerce_checkout_billing' ); ?>
+					</div>
 				</div>
 
 				<div class="col-2">
-					<?php do_action( 'woocommerce_checkout_shipping' ); ?>
+					<div class="checkout-shipping-form-cntlr">
+						<?php do_action( 'woocommerce_checkout_shipping' ); ?>
+					</div>
 				</div>
 			</div>
 
@@ -51,15 +55,15 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 		<?php endif; ?>
 		
 		<?php do_action( 'woocommerce_checkout_before_order_review_heading' ); ?>
-		
-		<h3 id="order_review_heading"><?php esc_html_e( 'Your order', 'woocommerce' ); ?></h3>
-		
-		<?php do_action( 'woocommerce_checkout_before_order_review' ); ?>
+		<div class="checkout-overreview-cntlr">
+			<h3 id="order_review_heading"><?php esc_html_e( 'Your order', 'woocommerce' ); ?></h3>
+			
+			<?php do_action( 'woocommerce_checkout_before_order_review' ); ?>
 
-		<div id="order_review" class="woocommerce-checkout-review-order">
-			<?php do_action( 'woocommerce_checkout_order_review' ); ?>
+			<div id="order_review" class="woocommerce-checkout-review-order">
+				<?php do_action( 'woocommerce_checkout_order_review' ); ?>
+			</div>
 		</div>
-
 		<?php do_action( 'woocommerce_checkout_after_order_review' ); ?>
 
 	</form>
