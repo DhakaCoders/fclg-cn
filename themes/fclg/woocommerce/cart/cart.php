@@ -89,6 +89,15 @@ do_action( 'woocommerce_before_cart' ); ?>
 						// Meta data.
 						echo wc_get_formatted_cart_item_data( $cart_item ); // PHPCS: XSS ok.
 
+
+
+						?>
+						<div>
+							Question: Which is another model produced by Lamborghini?
+							Your Answer: Huracan
+							<div>£14.50</div>
+						</div>
+						<?php
 						// Backorder notification.
 						if ( $_product->backorders_require_notification() && $_product->is_on_backorder( $cart_item['quantity'] ) ) {
 							echo wp_kses_post( apply_filters( 'woocommerce_cart_item_backorder_notification', '<p class="backorder_notification">' . esc_html__( 'Available on backorder', 'woocommerce' ) . '</p>', $product_id ) );
