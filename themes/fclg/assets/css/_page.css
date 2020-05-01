@@ -133,3 +133,77 @@ ol li::before {
 	align-items: center;
 	justify-content: center;
 }
+
+
+/* title*/
+.full-width-bdr-title{
+	margin-bottom: 75px;
+	margin-left: 15px;
+	position: relative;
+}
+.full-width-bdr-title:before{
+	content: "";
+	position: absolute;
+	left: 15px;
+	right: 0;
+	top: 0;
+	height: 1.5px;
+	background: #fff;
+	z-index: 1;
+}
+.full-width-bdr-title span{
+    display: inline-block;
+    vertical-align: baseline;
+    font-size: 26px;
+    line-height: 1;
+    text-transform: uppercase;
+    padding: 15px 50px 15px 15px;
+    background: #d70216;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    margin: 0;
+    top: -1.5px;
+    z-index: 2;
+}
+
+.full-width-bdr-title span:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -41px;
+    bottom: 0;
+    border-right: 41px solid transparent;
+    border-left: 50px solid transparent;
+    border-top: 56px solid #d70216;
+}
+
+.full-width-bdr-title span:before{
+	content: "";
+	position: absolute;
+	left: -15px;
+	right: -4px;
+	bottom: -15px;
+	height: 1.5px;
+	background: #FFFFFF;
+}
+
+.full-width-bdr-title span i {
+    position: absolute;
+    width: 1.5px;
+    top: -7px;
+    bottom: -23px;
+    right: -31px;
+    transform: rotate(37deg);
+    z-index: 5;
+    background: #fff;
+}
+.full-width-bdr-title span em {
+    background: #eaeaea;
+    height: 2px;
+    width: 15px;
+    top: 1px;
+    right: -55px;
+    position: absolute;
+    z-index: 5;
+}
