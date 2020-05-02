@@ -1,15 +1,13 @@
 <?php get_header(); ?>
 <?php while( have_posts() ): the_post();?>
 <section class="page-section">
+  <div class="fl-sec-hdr-title">
+    <h1 class="full-width-bdr-title">
+      <span><i></i><em></em> <?php the_title(); ?></span>
+    </h1>
+  </div>
   <div class="sec-overlay-cntlr">
     <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="how-it-works-sec-hdr">
-            <h1 class="hiwshder-title"><?php the_title(); ?></h1>
-          </div>
-        </div>
-      </div>
       <div class="row">
         <div class="col-sm-12">
           <div class="page-sec-des">
