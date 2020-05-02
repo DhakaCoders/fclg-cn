@@ -31,9 +31,9 @@
 	min-height: 52px;
 	min-width: 180px;
 }
-.woocommerce-error{
+/*.woocommerce-error{
 	border-top-color: #FF5C26;
-}
+}*/
 #shipping_method li:after,
 .woo-variation-swatches-stylesheet-enabled .variable-items-wrapper li:after{
 	content: none;
@@ -1015,6 +1015,50 @@ body.woocommerce-checkout .page-section{
 #order_review table tbody,
 #order_review table tfoot{
 	background: #fff;
+}
+
+
+.woocommerce-form.woocommerce-form-login.login{
+	background: #1A1C20;
+	border: none;
+	border-radius: 0;
+}
+.woocommerce-form.woocommerce-form-login.login label{
+	color: #fff;
+
+}
+.woocommerce input[type="text"], 
+.woocommerce input[type="email"], 
+.woocommerce input[type="tel"], 
+.woocommerce input[type="password"], 
+.woocommerce textarea{
+	background: #fff!important;
+	color: #1A1C20;
+}
+.woocommerce-button.button.woocommerce-form-login__submit,
+.woocommerce-button.button.woocommerce-form-login__submit, 
+.woocommerce-Button.woocommerce-button.button.woocommerce-form-register__submit{
+	border-radius: 0!important;
+}
+.woocommerce-LostPassword.lost_password a{
+	color: #EFBBB1;
+}
+#customer_login h2{
+	font-size: 28px;
+	line-height: 0;
+	margin-bottom: 35px;
+	text-transform: uppercase;
+}
+.woocommerce-form.woocommerce-form-register.register{
+	background: #fff;
+	border: none;
+	border-radius: 0;
+}
+.woocommerce-account .page-section{
+	background: #EAEAEA;
+}
+#customer_login .u-column2.col-2 h2{
+	color: #B20026;
 }
 @media(max-width: 991px){
 	.woocommerce #customer_details .col-1,
