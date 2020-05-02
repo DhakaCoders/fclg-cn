@@ -19,7 +19,7 @@ defined( 'ABSPATH' ) || exit;
 
 do_action( 'woocommerce_before_cart' ); ?>
 <div class="cart-wrapp clearfix">
-<div class="cart-form">
+<div class="cart-form" id="cart-form">
 <h3 class="carttitle">Items</h3>
 <form class="woocommerce-cart-form" action="<?php echo esc_url( wc_get_cart_url() ); ?>" method="post">
 	<?php do_action( 'woocommerce_before_cart_table' ); ?>
@@ -32,7 +32,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 				<th class="product-name"><?php esc_html_e( 'Competition', 'woocommerce' ); ?></th>
 				<th class="product-price"><?php esc_html_e( 'Price', 'woocommerce' ); ?></th>
 				<th class="product-quantity"><?php esc_html_e( 'Tickets', 'woocommerce' ); ?></th>
-				<th class="product-subtotal"><?php esc_html_e( 'Subtotal', 'woocommerce' ); ?></th>
+				<th class="product-subtotal"><?php esc_html_e( 'Total', 'woocommerce' ); ?></th>
 			</tr>
 		</thead>
 		<tbody>
@@ -92,10 +92,10 @@ do_action( 'woocommerce_before_cart' ); ?>
 
 
 						?>
-						<div>
-							Question: Which is another model produced by Lamborghini?
-							Your Answer: Huracan
-							<div>£14.50</div>
+						<div class="cat-tble-des">
+							<p>Question: <strong>Which is another model produced by Lamborghini?</strong></p>
+							<p>Your Answer: <strong>Huracan</strong></p>
+							<p><strong class="cart-tbl-price">£14.50</strong></p>
 						</div>
 						<?php
 						// Backorder notification.
@@ -113,7 +113,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 
 						<td class="product-quantity" data-title="<?php esc_attr_e( 'Quantity', 'woocommerce' ); ?>">
 					    <div class="qty">
-                            <span class="minus"><img src="<?php echo THEME_URI; ?>/assets/images/caret-up-2.png"></span>
+                            <span class="minus">-<!-- <img src="<?php echo THEME_URI; ?>/assets/images/caret-up-2.png"> --></span>
 						<?php
 						if ( $_product->is_sold_individually() ) {
 							$product_quantity = sprintf( '1 <input type="hidden" name="cart[%s][qty]" value="1" />', $cart_item_key );
@@ -133,7 +133,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 
 						echo apply_filters( 'woocommerce_cart_item_quantity', $product_quantity, $cart_item_key, $cart_item ); // PHPCS: XSS ok.
 						?>
-		                  <span class="plus"><img src="<?php echo THEME_URI; ?>/assets/images/caret-down-2.png"></span>
+		                  <span class="plus"><!-- <img src="<?php echo THEME_URI; ?>/assets/images/caret-down-2.png"> -->+</span>
 		                </div>
 						</td>
 
@@ -160,7 +160,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 						</div>
 					<?php } ?>
 
-					<button type="submit" class="button" name="update_cart" value="<?php esc_attr_e( 'Update cart', 'woocommerce' ); ?>"><?php esc_html_e( 'Update cart', 'woocommerce' ); ?></button>
+					<button type="submit" class="button update-cart-btn" name="update_cart" value="<?php esc_attr_e( 'Update cart', 'woocommerce' ); ?>"><?php esc_html_e( 'Update cart', 'woocommerce' ); ?></button>
 
 					<?php do_action( 'woocommerce_cart_actions' ); ?>
 
