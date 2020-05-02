@@ -955,7 +955,8 @@ body.woocommerce-checkout .page-section{
 .checkout-shipping-form-col{
 	display: none!important;
 }
-.woocommerce-billing-fields > h3{
+.woocommerce-billing-fields > h3,
+#order_review_heading{
 	font-size: 28px;
 	line-height: 1.2;
 	font-weight: 600;
