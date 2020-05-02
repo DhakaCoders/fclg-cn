@@ -941,6 +941,80 @@ body.woocommerce-cart .woocommerce #cart-form a.checkout-button.button{
 	line-height: 1!important;
 	font-weight: 400!important;
 }
+body.woocommerce-checkout .page-section{
+	background: #EAEAEA;
+}
+.woocommerce-additional-fields{
+	display: none;
+}
+.col-1.fl-col-full-width{
+	width: 100%!important;
+	padding-left: 0!important;
+	padding-right: 0!important;
+}
+.checkout-shipping-form-col{
+	display: none!important;
+}
+.woocommerce-billing-fields > h3{
+	font-size: 28px;
+	line-height: 1.2;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+.woocommerce-billing-fields__field-wrapper{
+	padding-left: 75px;
+}
+.woocommerce .woocommerce-billing-fields__field-wrapper .form-row label{
+	font-weight: 600!important;
+	font-size: 18px;
+	line-height: 1;
+}
+.woocommerce form .form-row{
+	margin-bottom: 25px;
+}
+.woocommerce input[type="text"], .woocommerce input[type="email"], 
+.woocommerce input[type="tel"], .woocommerce input[type="password"], 
+.woocommerce textarea{
+	border-radius: 6px!important;
+	border: 1px solid #999999;
+}
+.woocommerce input[type="text"], .woocommerce input[type="email"], 
+.woocommerce input[type="tel"], .woocommerce input[type="password"]{
+	height: 50px;
+}
+.woocommerce form .form-row .required{
+	color: #e01030;
+}
+.select2-container--default .select2-selection--single{
+	border: 1px solid #999999!important;
+	border-radius: 6px!important;
+	height: 50px!important;
+}
+.select2-dropdown.select2-dropdown--below{
+	border-left: 1px solid #999999;
+	border-right: 1px solid #999999;
+}
+#order_review{
+	padding-left: 75px;
+}
+#order_review table{
+	background: #fff;
+	border-radius: 0;
+}
+#order_review table tbody tr:first-child td{
+	border-top: none!important;
+}
+#order_review table thead{
+	background: #1A1C20;
+	color: #fff;
+}
+#order_review table thead tr th{
+	border: none!important;
+}
+#order_review table tbody,
+#order_review table tfoot{
+	background: #fff;
+}
 @media(max-width: 991px){
 	.woocommerce #customer_details .col-1,
 	.woocommerce #customer_details .col-2 {
