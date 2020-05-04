@@ -84,4 +84,11 @@ Desktop---->
 	footer pest korte hobe
 
 
+Modal---->
+1. https://www.screencast.com/t/9CY2OnMR4mc
+	hover effects lagbe r font-weight mileni maybe
+
+2. https://www.screencast.com/t/qvKjMhhd
+	atar color mileni
+
 
