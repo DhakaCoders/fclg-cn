@@ -171,7 +171,7 @@ ol li::before {
     content: "";
     position: absolute;
     top: 0;
-    right: -41px;
+    right: -42px;
     bottom: 0;
     border-right: 41px solid transparent;
     border-left: 50px solid transparent;
@@ -191,9 +191,9 @@ ol li::before {
 .full-width-bdr-title span i {
     position: absolute;
     width: 1.5px;
-    top: -7px;
+    top: -6px;
     bottom: -23px;
-    right: -31px;
+    right: -30px;
     transform: rotate(37deg);
     z-index: 5;
     background: #fff;
@@ -206,4 +206,11 @@ ol li::before {
     right: -55px;
     position: absolute;
     z-index: 5;
+}
+
+.fl-sec-hdr-title-drk-cntlr .full-width-bdr-title span em{
+	background: #1b1c20;
+}
+body.home .footer-tp-gallery-sec-wrp{
+	padding-top: 10px;
 }

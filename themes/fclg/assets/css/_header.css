@@ -225,7 +225,7 @@ nav.main-nav ul.sub-menu li a{
 	font-family: 'Oswald', sans-serif;
 }
 
-nav.main-nav ul.sub-menu li:before {
+nav.main-nav ul.sub-menu li:after {
     position: absolute;
     content: '';
     top: 0;
@@ -234,12 +234,12 @@ nav.main-nav ul.sub-menu li:before {
     bottom: 0;
     width: 2px;
     height: 0;
-    background: #f4b406;
+    background: #B20026;
     -webkit-transition: all .3s;
     -o-transition: all .3s;
     transition: all .3s;
 }
-nav.main-nav ul.sub-menu li:hover:before {
+nav.main-nav ul.sub-menu li:hover:after {
     height: 100%;
 }
 .xs-popup-menu{

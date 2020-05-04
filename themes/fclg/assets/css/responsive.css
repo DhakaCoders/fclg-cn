@@ -44,6 +44,17 @@
 		font-size: 18px;
 		top: 8px
 	}
+	.full-width-bdr-title:before,
+	.full-width-bdr-title span:before{
+		content: none;
+	}
+	.full-width-bdr-title span i,
+	.full-width-bdr-title span em{
+		display: none;
+	}
+	.full-width-bdr-title{
+		margin-bottom: 45px;
+	}
 }
 
 @media(max-width: 575px){
@@ -57,7 +68,22 @@
 }
 
 @media(max-width: 479px){
-
+	/*.full-width-bdr-title{
+		max-width: 250px;
+	}*/
+	.full-width-bdr-title span{
+		background: transparent;
+		color: #000;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.full-width-bdr-title span:after{
+		content: none;
+	}
+	.full-width-bdr-title {
+	    margin-bottom: 30px;
+	    padding-left: 0;
+	}
 
 }
 

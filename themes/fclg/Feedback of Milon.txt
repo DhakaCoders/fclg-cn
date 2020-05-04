@@ -1,0 +1,87 @@
+-----------------------------------
+Footer
+-----------------------------------
+Desktop---->
+
+1. https://www.screencast.com/t/N4F8l51W1tPC
+	top and bottom gap ta atar moto look ta niye aso, jpg ta on korle bujte parba
+
+2. https://www.screencast.com/t/CpV3WdeAsxDD
+	ai gap ta besi hobe. amader sob page gulo jpg ar sathe milay dekhte hobe. bcoz jpg tei actual look ta ache
+
+
+3. https://www.screencast.com/t/mTM63zmK
+	gap besi hobe
+
+4. https://www.screencast.com/t/5dGaGW4bJ
+	hover a red color ta daw
+
+
+
+-----------------------------------
+Contact 
+-----------------------------------
+Desktop---->
+
+1. https://www.screencast.com/t/aJ3OzoNNjt
+	border color ata hobe
+
+2. https://www.screencast.com/t/HZhZVBLBC
+	ai white bg ta missing
+
+3. https://www.screencast.com/t/6uE3O06CNHa
+	hover korle icon ar color ta daw
+
+4. https://www.screencast.com/t/fXR4fF1NWC
+	text ta center a nai, aktu upore uthe ache
+
+
+
+-----------------------------------
+Faq 
+-----------------------------------
+Desktop---->
+1. https://www.screencast.com/t/acZkNrQ8b1
+	ai gap ta kom hobe
+
+2. https://www.screencast.com/t/PDL3ZdIK
+	text ta center a nai r aktu niche nambe
+
+
+
+-----------------------------------
+Entry Lists 
+-----------------------------------
+Desktop---->
+1. 
+
+	i) https://www.screencast.com/t/hf1emLKhgv
+	atar markup aktu update korte hobe.
+	amon thake markup ta
+	<ul class="page-numbers">
+		<li><span aria-current="page" class="page-number current">1</span></li>
+		<li><a class="page-number" href="#">2</a></li>
+		<li><a class="page-number" href="#">3</a></li>
+		<li><span class="page-number dots">…</span></li>
+		<li><a class="page-number" href="#">83</a></li>
+		<li><a class="next page-number" href="#">»</a></li>
+    </ul>
+
+    next a amon pele ai markup ta always hobe
+
+    ii) https://www.screencast.com/t/sm0vpP1e
+    	white bg missing
+
+
+
+-----------------------------------
+Competition Winners
+-----------------------------------
+Desktop---->
+1. ager page thake ja ja mile
+
+2. https://www.screencast.com/t/aCSC8iJa
+	footer pest korte hobe
+
+
+
