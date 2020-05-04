@@ -299,6 +299,7 @@ $('.qty').each(function() {
 });
 
 $('div.fl-tabs button').click(function(){
+    
         var tab_id = $(this).attr('data-tab');
 
         $('div.fl-tabs button').removeClass('current');
