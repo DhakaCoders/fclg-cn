@@ -5,8 +5,10 @@ faq-accordion-tab-sec-wrp
 */
 .faq-accordion-tab-sec-wrp{
 	background: #eaeaea;
-/*	padding-top: 80px;*/
 	padding-bottom: 55px;
+}
+.faq-accordion-tab-sec-wrp .full-width-bdr-title {
+    margin-bottom: 30px;
 }
 .faq-accordion-title{
     font-size: 20px;
@@ -78,7 +80,7 @@ fc-looking-head-sec-wrp
 	text-decoration: none;
 	background: #70BA61;
 	border:2px solid#70BA61;
-	padding: 12px 25px;
+	padding: 14px 25px 12px;
 	color: #fff;
 	text-transform: uppercase;
 	font-size: 16px;
@@ -124,11 +126,28 @@ fc-looking-head-sec-wrp
 	.faq-accordion-title {
 	    padding: 30px 10px 30px 30px;
 	}
+	.faq-accordion-tab-sec-wrp .fl-sec-hdr-title{
+		max-width: 400px;
+		width: 100%;
+	}
+	.faq-accordion-tab-sec-wrp .full-width-bdr-title span:after {
+	    border-top: 82px solid #d70216;
+	}
+	.faq-accordion-tab-sec-wrp .full-width-bdr-title {
+	    padding-right: 10px;
+	}
 }
 
 @media(max-width: 479px){
 	.fc-contact-form-msg-field textarea {
 	    height: 150px;
+	}
+	.faq-accordion-tab-sec-wrp .fl-sec-hdr-title{
+		max-width: 100%;
+		width: 100%;
+	}
+	.faq-accordion-tab-sec-wrp .full-width-bdr-title {
+	    margin-bottom: 10px;
 	}
 }
 

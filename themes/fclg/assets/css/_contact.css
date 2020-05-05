@@ -8,6 +8,9 @@
 	padding-top: 0;
 	padding-bottom: 80px;
 }
+.contact-form-sec-wrp .full-width-bdr-title {
+    margin-bottom: 60px;
+}
 .contact-form-lft{
 	width: 60%;
 	float: left;
@@ -45,7 +48,7 @@
 .fc-contact-form-field input[type=text]{
 	width: 100%;
 	height: 48px;
-	border:1px solid #545559;
+	border:1px solid #999999;
 	padding: 12px 15px 18px;
 	font-size: 16px;
 	line-height: 18px;
@@ -60,7 +63,7 @@
 .fc-contact-form-msg-field textarea:focus,
 .fc-contact-form-field input[type=email]:focus,
 .fc-contact-form-field input[type=text]:focus{
-	border-color: #999999;
+	border-color: #c6c2c2;
 }
 .fc-contact-form-submit button{
 	font-size: 20px;
@@ -74,6 +77,7 @@
 	border:2px solid#70BA61;
 	margin-top: 20px;
 	cursor: pointer;
+	padding-top: 2px;
 }
 .fc-contact-form-submit button:hover{
 	background: transparent;
@@ -94,6 +98,7 @@
 	width: 90px;
 	height: 90px;
 	border: 1px solid#4f5054;
+	background: #fff;
 	float: left;
 	display: flex;
 	justify-content: center;
@@ -196,10 +201,12 @@
 	    line-height: 28px;
 	}
 	.contact-form-sec-wrp {
-	    padding-top: 90px;
 	    padding-bottom: 50px;
 	}
-	
+	.contact-form-sec-wrp .full-width-bdr-title {
+	    margin-bottom: 45px;
+	}
+		
 }
 
 @media(max-width: 575px){
@@ -225,6 +232,9 @@
 	}
 	.contact-form-title-1{
 		margin-bottom: 35px;
+	}
+	.contact-form-sec-wrp .full-width-bdr-title {
+	    margin-bottom: 30px;
 	}
 }
 
