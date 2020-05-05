@@ -51,6 +51,12 @@
 .previous-draws-sec-grd-cntlr ul li:nth-child(2n+1){
 	clear: left;
 }
+.previous-draws-sec-grd-cntlr ul li:last-child,
+.previous-draws-sec-grd-cntlr ul li:nth-last-child(2){
+	padding-bottom: 0;
+}
+
+
 
 .fb-video-embaded{
 	background: #f1f1f1;
@@ -58,5 +64,8 @@
 }
 .fb-video{
 	width: 100%;
-	min-height: 445px;
+}
+.fb-video-embaded iframe{
+	height: 445px!important;
+	width: 100%!important;
 }
