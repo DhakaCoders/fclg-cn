@@ -4,8 +4,7 @@
 -----------------------
 */
 .fc-cw-post-grid-sec-wrp{
-	/*padding-top: 100px;*/
-	padding-bottom: 80px;
+	padding-bottom: 70px;
 	background: #eaeaea;
  }
  .fc-cw-post-grid-wrp ul{
@@ -65,6 +64,10 @@
 	color: #1B1C20;
 	font-weight: 400;
 }
+.fc-modal-dsc-wrp button.close{
+	color: #1A1C20 !important;
+	opacity: 1;
+}
 .vn-modal-con-wrap .modal-title{
 	display: block;
 	font-size: 26px;
@@ -96,7 +99,7 @@
 	padding-right: 0;
 }
 
-.vn-modal-con-wrap .btn-secondary {
+.vn-modal-con-wrap .btn-secondary{
     color: #fff;
     background-color: #70BA61;
     border:2px solid#70BA61;
@@ -104,6 +107,14 @@
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     padding: 6px 18px;
+    font-weight: 400;
+    transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+.vn-modal-con-wrap .btn-secondary:hover{
+	background: transparent;
+	color: #70BA61;
 }
 
 /*

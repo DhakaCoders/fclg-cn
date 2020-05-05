@@ -1,6 +1,6 @@
 .ftr-top{
   background: #B20026;
-  padding: 80px 0 85px;
+  padding: 80px 0 80px;
   border-top: 1px solid#fff;
 }
 .ftr-col-main .ftr-col{
@@ -25,7 +25,7 @@
   text-transform: uppercase;
   color: #fff;
   font-weight: 700;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 .ftr-col h6 span{
   display: inline-block;
@@ -43,19 +43,21 @@
   color: #fff;
 }
 .ftr-col ul li a:hover{
-  color: #000;
+  color: #ddd;
 }
 .ftr-col ul li::before{
   content: none;
 }
-.ftr-col p{
-  font-size: 16px;
-  line-height: 37px;
-  color: #fff;
-  margin-top: -10px;
-  margin-bottom: 8px;
+.ftr-col p {
+    font-size: 16px;
+    line-height: 32px;
+    color: #fff;
+    margin-top: -8px;
+    margin-bottom: 8px;
 }
-
+.ftr-socail-icon{
+  padding-top: 28px;
+}
 .ftr-socail-icon ul{
   list-style: none;
   margin: 0;
@@ -77,9 +79,9 @@
   vertical-align: baseline;
   text-decoration: none;
 }
-.ftr-btm{
-  padding: 12px 0 13px;
-  background: #D60215;
+.ftr-btm {
+    padding: 15px 0 13px;
+    background: #D60215;
 }
 .ftr-btm-col-1{
   width: 100%;
@@ -151,7 +153,7 @@ footer-tp-gallery-sec-wrp
       padding-bottom: 10px;
   }
   .ftr-socail-icon{
-    padding-top: 10px;
+    padding-top: 20px;
   }
   .ftr-col-1 {
       width: 100%;

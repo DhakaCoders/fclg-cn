@@ -5,7 +5,6 @@ fc-enty-list-box-sec-wrp
 */
 .fc-enty-list-box-sec-wrp{
 	background: #eaeaea;
-	/*padding-top: 120px;*/
 	padding-bottom: 70px;
 }
 .fc-enty-list-box-wrp ul{
@@ -85,11 +84,13 @@ fc-enty-list-box-sec-wrp
 	font-weight: 600;
 	float: left;
 }
+.fc-pagination-wrp ul li span,
 .fc-pagination-wrp ul li a{
 	display: inline-block;
 	vertical-align: baseline;
 	text-decoration: none;
 	color: #A0A0A0;
+	background: #fff;
 	width: 35px;
 	height: 35px;
 	display: flex;
@@ -99,10 +100,10 @@ fc-enty-list-box-sec-wrp
 	border:1px solid#b8b8b8;
 	border-left: 0;
 }
-.fc-pagination-wrp ul li:first-child a{
-	border-left: 1px solid#b8b8b8;
+.fc-pagination-wrp ul li span.current{
+	border-left:1px solid#1A1C20;
 }
-.fc-pagination-wrp ul li a.active,
+.fc-pagination-wrp ul li span.current,
 .fc-pagination-wrp ul li a:hover{
 	background: #DF0025;
 	color: #fff;
