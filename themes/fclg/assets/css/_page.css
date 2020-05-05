@@ -83,6 +83,9 @@
 .sitemap ul li a:focus{
 	text-decoration: underline;
 }
+.sitemap ul li a:hover{
+	color:#EFBBB1; 
+}
 
 
 
