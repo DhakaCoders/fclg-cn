@@ -2,7 +2,8 @@
 All Transitions
 */
 .fc-cw-post-grid-inr:hover .fc-cw-post-grid-img,
-a,input,img,textarea,button,svg{
+a,input,img,textarea,button,svg,
+.see-all-components-btn a span{
 	transition: all 0.5s;
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;

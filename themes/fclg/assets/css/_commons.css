@@ -324,14 +324,23 @@ form .dropdown-menu li a{
 
 
 .proGallerySlider .proGallerySlideItem,
-.flProGgalleryThumbPagi .flProGgalleryThumbPagi-item{
+.flProGgalleryThumbPagi .flProGgalleryThumbPagi-item,
+.mainSlider .mainSlideItem,
+.hmNewCompitionsSecSlider .hmNewCompitionsSecSlideItem,
+.hmLatestWinnersSlider .hmLatestWinnersSlideItem{
 	display: none;
 }
 .proGallerySlider .proGallerySlideItem:first-child,
-.flProGgalleryThumbPagi .flProGgalleryThumbPagi-item:first-child{
+.flProGgalleryThumbPagi .flProGgalleryThumbPagi-item:first-child,
+.mainSlider .mainSlideItem:first-child,
+.hmNewCompitionsSecSlider .hmNewCompitionsSecSlideItem:first-child,
+.hmLatestWinnersSlider .hmLatestWinnersSlideItem:first-child{
 	display: block;
 }
 .proGallerySlider.slick-initialized .proGallerySlideItem,
-.flProGgalleryThumbPagi.slick-initialized .flProGgalleryThumbPagi-item{
+.flProGgalleryThumbPagi.slick-initialized .flProGgalleryThumbPagi-item,
+.mainSlider.slick-initialized .mainSlideItem,
+.hmNewCompitionsSecSlider.slick-initialized .hmNewCompitionsSecSlideItem,
+.hmLatestWinnersSlider.slick-initialized .hmLatestWinnersSlideItem{
 	display: block;
 }

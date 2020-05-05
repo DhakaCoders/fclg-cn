@@ -137,6 +137,10 @@
 .hdr-social ul li a{
 	color: #fff;
 }
+.hdr-social ul li a:hover,
+.hdr-login-register-btns a:hover{
+	color: #EFBBB1;
+}
 
 
 nav.main-nav ul{

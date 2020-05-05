@@ -1,0 +1,221 @@
+.main-slider-section{
+	padding-bottom: 35px;
+}
+.home-page-sections-cntlr{
+	background: #1b1c20;
+	color: #fff;
+}
+.mainSlideItemInner{
+	display: flex;
+	align-items: center;
+}
+.main-slide-item-lft{
+	width: 68%;
+}
+.main-slide-item-rgt{
+	width: 32%;
+	padding-left: 30px;
+	text-align: center;
+}
+.main-slide-full-img img,
+.main-slider-thumb-img img{
+	width: 100%;
+}
+.main-slide-thumb-imges{
+	margin-left: -15px;
+	margin-right: -15px;
+}
+.main-slider-thumb-img{
+	float: left;
+	width: 33.3333%;
+	padding: 0 15px 0;
+}
+.main-slide-product-title{
+	padding: 5px 0 5px 2px;
+}
+
+.main-slide-product-title .title-angle{
+	border-right-color: #1b1c20;
+}
+
+.main-slide-product-title .fl-pro-grd-item-title strong{
+	font-size: 34px;
+	font-weight: 700;
+	line-height: 1;
+}
+
+.main-slide-product-title .fl-pro-grd-item-title{
+	padding: 12px 55px 10px 10px;
+	justify-content: flex-end;
+}
+.main-slide-item-rgt{
+	font-size: 38px;
+	line-height: 1;
+}
+.main-slide-item-rgt > span{
+	font-weight: 600;
+	font-style: italic;
+	display: block;
+	margin-bottom: 25px;
+}
+.main-slide-item-rgt strong{
+	font-weight: 700;
+	padding-bottom: 25px;
+	display: block;
+	line-height: 1.2;
+}
+
+.main-slide-item-rgt a{
+	font-size:;
+	max-width: 330px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #fff;
+	color: #fff;
+	padding: 9px;
+	font-size: 22px;
+	line-height: 1;
+	font-weight: 700;
+	margin-left: auto;
+	margin-right: auto;
+}
+.main-slide-item-rgt a span{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	background: #70BA61;
+	min-height: 70px;
+	padding: 5px 10px;
+	letter-spacing: 2px;
+}
+.main-slide-item-rgt a:hover{
+	border-color: transparent;
+}
+.mainSlider{
+	margin-bottom: 0!important;
+}
+.mainSlider ul.slick-dots{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	text-align: right;
+}
+.hmNewCompitionsSecSlider{
+	margin: 0 -10px!important;
+}
+.hmNewCompitionsSecSlideItem{
+	padding: 0 10px;
+}
+
+.hmNewCompitionsSecSlider ul.slick-dots{
+	padding-top: 20px!important;
+}
+
+.hmNewCompitionsSecSlider .title-angle{
+	border-right-color: #1b1c20;
+}
+
+.how-it-works-section.hm-how-it-works-sec{
+	background: #fff;
+	color: #333333;
+}
+
+.home-page-sections-cntlr .slick-slider .slick-dots li{
+	background: #d0d2d1!important;
+}
+
+
+.home-page-sections-cntlr .slick-slider .slick-dots li.slick-active{
+	background: #d70216!important;
+}
+
+.hm-new-compitions-sec{
+	position: relative;
+	padding-bottom: 55px;
+}
+
+.see-all-components-btn{
+	position: absolute;
+	letter-spacing: 0;
+	right: 0;
+	bottom: -25px;
+	z-index: 11;
+}
+
+.see-all-components-btn a{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	font-weight: 600;
+	font-size: 22px;
+	line-height: 1;
+	background: #1b1c20;
+	width: 320px;
+	padding: 10px;
+}
+.see-all-components-btn a span{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 60px;
+	background: #70ba61;
+	width: 100%;
+	padding: 10px 10px 5px;
+	border: 2px solid #70ba61;
+}
+.see-all-components-btn a:hover span{
+	background: transparent;
+	color: #70ba61;
+}
+
+.hm-latest-winners-sec{
+	padding: 38px 0 10px;
+}
+.hmNewCompitionsSecSlideItem{
+	width: 33.3333%;
+}
+.hmLatestWinnersSlider{
+	margin: 0 -5px!important;
+}
+.hmLatestWinnersSlideItem{
+	width: 20%;
+	padding: 0 5px;
+}
+
+.hmLatestWinnersSlider.slick-slider ul.slick-dots{
+	padding-top: 30px!important;
+	padding-bottom: 2px!important;
+}
+
+.see-all-winnners-btn a{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 300px;
+	width: 100%;
+	min-height: 60px;
+	color: #fff;
+	font-size: 22px;
+	line-height: 1;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding: 10px 10px 5px;
+	margin-left: auto;
+	background: #70BA61;
+	border: 2px solid #70BA61;
+}
+
+.see-all-winnners-btn a:hover{
+	color: #70BA61;
+	background: transparent;
+}
+
+.hm-customer-reviews-item{
+	background: #fff;
+	padding: 35px 25px 35px 20px;
+}

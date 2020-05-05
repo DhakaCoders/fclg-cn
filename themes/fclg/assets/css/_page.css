@@ -201,9 +201,9 @@ ol li::before {
 .full-width-bdr-title span em {
     background: #eaeaea;
     height: 2px;
-    width: 15px;
+    width: 14px;
     top: 1px;
-    right: -55px;
+    right: -53.5px;
     position: absolute;
     z-index: 5;
 }
