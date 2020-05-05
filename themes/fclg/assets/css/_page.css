@@ -219,9 +219,12 @@ ol li::before {
     height: 2px;
     width: 14px;
     top: 1px;
-    right: -53.5px;
+    right: -55px;
     position: absolute;
     z-index: 5;
+}
+.fl-sec-hdr-title-drk-cntlr .full-width-bdr-title span em{
+	right: -53.5px;
 }
 
 .fl-sec-hdr-title-drk-cntlr .full-width-bdr-title span em{
