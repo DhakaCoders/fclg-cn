@@ -51,9 +51,10 @@
 	display: inline-block;
 	vertical-align: baseline;
 	text-decoration: none;
+	margin-top: auto;
 }
 .fc-cw-post-grid-dsc-title:hover a{
-	color: #EFBBB1;
+	color: #1b1c20;
 }
 .fc-cw-post-grid-dsc{
 	padding: 15px 10px 15px;

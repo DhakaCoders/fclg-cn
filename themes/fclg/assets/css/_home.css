@@ -125,12 +125,28 @@
 }
 
 .home-page-sections-cntlr .slick-slider .slick-dots li{
-	background: #d0d2d1!important;
+	background: transparent!important;
 }
 
 
 .home-page-sections-cntlr .slick-slider .slick-dots li.slick-active{
-	background: #d70216!important;
+	background: transparent!important;
+}
+.home-page-sections-cntlr .slick-slider .slick-dots li a{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid #bababc;
+	width: 27px;
+	height: 27px;
+	font-weight: 600;
+	color: #bababc;
+	margin-left: 1px;
+}
+.home-page-sections-cntlr .slick-slider .slick-dots li.slick-active a{
+	background: #e00025;
+	color: #fff;
+	border-color: #e00025;
 }
 
 .hm-new-compitions-sec{
