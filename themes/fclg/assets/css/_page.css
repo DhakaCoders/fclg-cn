@@ -72,6 +72,19 @@
 }
 
 
+.sitemap{
+	padding: 100px 0;
+}
+
+.sitemap ul li{
+	padding-bottom: 10px;
+	font-weight: 700;
+}
+.sitemap ul li a:focus{
+	text-decoration: underline;
+}
+
+
 
 
 
