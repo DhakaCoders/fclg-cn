@@ -51,3 +51,12 @@
 .previous-draws-sec-grd-cntlr ul li:nth-child(2n+1){
 	clear: left;
 }
+
+.fb-video-embaded{
+	background: #f1f1f1;
+	color: #606163;
+}
+.fb-video{
+	width: 100%;
+	min-height: 445px;
+}
