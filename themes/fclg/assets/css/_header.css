@@ -36,6 +36,9 @@
 .hdr-rating ul li a{
 	color: #F7CE28;
 }
+.hdr-rating ul li a:hover{
+	color: #ddd;
+}
 .hdr-rating span u{
 	padding-bottom: 1px;
 	border-bottom: 1px dotted #fff;

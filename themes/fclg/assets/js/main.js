@@ -348,7 +348,11 @@ if( $('.mainSlider').length ){
       speed: 700,
       slidesToShow: 1,
       slidesToScroll: 1,
-      fade: true
+      fade: true,
+      customPaging : function(slider, i) {
+        var thumb = $(slider.$slides[i]).data();
+        return '<a class="dot">'+i+'</a>';
+            },
     });
 }
 
