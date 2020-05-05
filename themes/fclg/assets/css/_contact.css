@@ -8,6 +8,9 @@
 	padding-top: 0;
 	padding-bottom: 80px;
 }
+.contact-form-sec-wrp .full-width-bdr-title {
+    margin-bottom: 60px;
+}
 .contact-form-lft{
 	width: 60%;
 	float: left;
@@ -200,7 +203,10 @@
 	.contact-form-sec-wrp {
 	    padding-bottom: 50px;
 	}
-	
+	.contact-form-sec-wrp .full-width-bdr-title {
+	    margin-bottom: 45px;
+	}
+		
 }
 
 @media(max-width: 575px){
@@ -226,6 +232,9 @@
 	}
 	.contact-form-title-1{
 		margin-bottom: 35px;
+	}
+	.contact-form-sec-wrp .full-width-bdr-title {
+	    margin-bottom: 30px;
 	}
 }
 

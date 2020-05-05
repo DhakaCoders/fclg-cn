@@ -7,6 +7,9 @@
 	padding-bottom: 70px;
 	background: #eaeaea;
  }
+ .fc-cw-post-grid-sec-wrp .full-width-bdr-title {
+    margin-bottom: 50px;
+}
  .fc-cw-post-grid-wrp ul{
  	margin: 0 -5px;
  }
