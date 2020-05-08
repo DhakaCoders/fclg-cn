@@ -72,13 +72,6 @@ Responsive on 767px
 // http://codepen.io/norman_pixelkings/pen/NNbqgG
 // https://stackoverflow.com/questions/38686650/slick-slides-on-pagination-hover
 
-
-/*
--------------------
- Milon
--------------------
-*/
-
 var allPanels = $('.faq-accordion-des').hide();
 $('.faq-accordion-tab-row').removeClass('remove-border');
   $('.faq-accordion-title').click(function() {
@@ -166,16 +159,6 @@ function initialize(){
 google.maps.event.addDomListener(window, 'load', initialize);
 
 }
-
-
-/*Shoriful*/
-
-
-
-
-
-/*Rannojit*/
-
 
 if (windowWidth <= 991) {
   $('.hdr-humberger').on('click', function(e){

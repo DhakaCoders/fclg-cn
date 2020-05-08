@@ -8,14 +8,14 @@
   padding-right: 50px;
 }
 .ftr-col-1{
-  width: 27%;
+  width: 33.33%;
 }
 .ftr-col-2{
-  width: 27%;
+  width: 33.33%;
 }
 .ftr-col-3{
-  width: 46%;
-  padding-right: 142px !important;
+  width: 33.33%;
+  padding-right: 0 !important;
 }
 
 .ftr-col h6{
@@ -129,7 +129,7 @@ footer-tp-gallery-sec-wrp
 
 @media(max-width: 991px){
   .ftr-col-main .ftr-col {
-      padding-right: 10px;
+      padding-right: 25px;
   }
   .ftr-col-1 {
       width: 28%;
@@ -150,7 +150,7 @@ footer-tp-gallery-sec-wrp
   .ftr-col-main .ftr-col {
       padding-right: 0;
       text-align: center;
-      padding-bottom: 10px;
+      padding-bottom: 25px;
   }
   .ftr-socail-icon{
     padding-top: 20px;

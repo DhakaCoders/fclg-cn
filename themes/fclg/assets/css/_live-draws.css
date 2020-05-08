@@ -59,13 +59,12 @@
 
 
 .fb-video-embaded{
-	background: #f1f1f1;
 	color: #606163;
 }
 .fb-video{
 	width: 100%;
 }
 .fb-video-embaded iframe{
-	height: 445px!important;
+	height: 380px!important;
 	width: 100%!important;
 }
