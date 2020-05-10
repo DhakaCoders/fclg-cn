@@ -65,7 +65,8 @@
 .fc-contact-form-field input[type=text]:focus{
 	border-color: #c6c2c2;
 }
-.fc-contact-form-submit button{
+.fc-contact-form-submit button,
+.fc-contact-form-submit input[type=submit]{
 	font-size: 20px;
 	line-height: 22px;
 	color: #fff;
@@ -79,10 +80,14 @@
 	cursor: pointer;
 	padding-top: 2px;
 }
-.fc-contact-form-submit button:hover{
+.fc-contact-form-submit button:hover,
+.fc-contact-form-submit input[type=submit]:hover{
 	background: transparent;
 	border-color: #70BA61;
 	color: #70BA61;
+}
+span.wpcf7-not-valid-tip {
+    margin-top: 10px;
 }
 .contact-form-rgt{
 	width: 40%;
