@@ -65,7 +65,7 @@
             </div>
             <div class="hdr-cart-btn">
               <div class="hdr-cart-btn-inr">
-                <a href="#">
+                <a href="<?php echo wc_get_cart_url(); ?>">
                   <i>
                     <img src="<?php echo THEME_URI; ?>/assets/images/cart-icon.png">
                     <?php if(WC()->cart->get_cart_contents_count() > 0) {
