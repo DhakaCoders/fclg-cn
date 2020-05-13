@@ -57,8 +57,9 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 			}?>
 
 		<?php endif; ?>
-		<div class="price-qty-wrapp">
-		<?php do_action('lottery_price'); ?>
+	<div class="fl-pro-summary-price-quentity">
+    <?php do_action('lottery_price'); ?>
+    <div class="fl-pro-summary-qty">
 	<?php
 		/**
 		 * @since 2.1.0.
@@ -91,6 +92,7 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 		 */
 		do_action( 'woocommerce_after_add_to_cart_button' );
 	?>
+	</div>
 </div>
 </form>
 

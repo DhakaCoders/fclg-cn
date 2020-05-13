@@ -233,3 +233,6 @@ ol li::before {
 body.home .footer-tp-gallery-sec-wrp{
 	padding-top: 10px;
 }
+.page-404.text-center {
+    padding: 120px 0;
+}

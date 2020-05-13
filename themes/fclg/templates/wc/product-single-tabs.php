@@ -12,19 +12,19 @@
         <div>
           <div id="tab-1" class="fl-tab-content current">
             <div class="fl-pro-details-tabs-con"> 
-            <?php
-				$short_description = apply_filters( 'woocommerce_short_description', $post->post_excerpt );
+          <?php
+    				$short_description = apply_filters( 'woocommerce_short_description', $post->post_excerpt );
 
-				if ( ! $short_description ) {
-					return;
-				}
-				echo $short_description; // WPCS: XSS ok.
-			?>
+    				if ( ! $short_description ) {
+    					return;
+    				}
+    				echo $short_description; // WPCS: XSS ok.
+    			?>
             </div>
           </div>
           <div id="tab-2" class="fl-tab-content">
             <div class="fl-pro-details-tabs-con">
-				<?php the_content(); ?>
+				     <?php the_content(); ?>
             </div>
           </div> 
         </div>
