@@ -279,25 +279,46 @@
   <?php endif; wp_reset_postdata(); ?>   
 </section>
 <?php endif; ?>
-
+<?php
+  $showhidereviews = get_field('showhidereviews', HOMEID);
+  if( $showhidereviews ):
+    $reviews = get_field('reviews', HOMEID);
+?>
 <section class="hm-customer-reviews-sec">
   <div class="fl-sec-hdr-title fl-sec-hdr-title-drk-cntlr">
-    <h1 class="full-width-bdr-title">
-      <span><i></i><em></em> CUSTOMER REVIEWS</span>
-    </h1>
+    <?php if( !empty($reviews['title']) ) printf('<h1 class="full-width-bdr-title"><span><i></i><em></em>%s</span></h1>', $reviews['title'] ); ?>
   </div>
+  <?php 
+  $reviewargs = new WP_Query(array( 
+    'post_type'=> 'customer_reviews',
+    'post_status' => 'publish',
+    'posts_per_page' => 3,
+    'orderby' => 'date',
+    'order'=> 'desc'
+    ) 
+  );
+  ?>
+  <?php if( $reviewargs->have_posts() ):?>
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="hm-customer-reviews-sec-cntlr">
           <ul class="reset-list clearfix">
+          <?php 
+            while($reviewargs->have_posts()): $reviewargs->the_post();
+              $firstname = get_field('first_name', get_the_ID());
+              $lastname = get_field('last_name', get_the_ID());
+              $description = get_field('description', get_the_ID());
+          ?>
             <li>
               <div class="hm-customer-reviews-item">
                 <div class="hmcri-hdr">
                   <h4 class="hmcri-hdr-title">
-                    <a href="#">
-                      <span>Jeremy</span>
-                      Clarkson
+                    <a>
+                      <?php 
+                        if( !empty($firstname) ) printf('<span>%s</span>', $firstname);
+                        if( !empty($lastname) ) printf('%s', $lastname);
+                      ?>
                     </a>
                   </h4>
                   <div class="reviews-stars">
@@ -309,66 +330,25 @@
                   </div>
                 </div>
                 <div class="hmcri-des">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies magna vitae neque porttitor eleifend. Aliquam laoreet quis urna nec molestie. Sed non odio vitae tellus interdum scelerisque id nec aptent taciti sociosqu leo. </p>
-                  <span>25-01-2020</span>
+                  <?php 
+                    if( !empty($description) ) echo wpautop( $description );
+                  ?>
+                  <span><?php echo get_the_date('d-m-Y'); ?></span>
                 </div>
               </div>
             </li>
-            <li>
-              <div class="hm-customer-reviews-item">
-                <div class="hmcri-hdr">
-                  <h4 class="hmcri-hdr-title">
-                    <a href="#">
-                      <span>James</span>
-                      May
-                    </a>
-                  </h4>
-                  <div class="reviews-stars">
-                    <a href="#"><i class="fas fa-star"></i></a>
-                    <a href="#"><i class="fas fa-star"></i></a>
-                    <a href="#"><i class="fas fa-star"></i></a>
-                    <a href="#"><i class="fas fa-star"></i></a>
-                    <a href="#"><i class="fas fa-star"></i></a>
-                  </div>
-                </div>
-                <div class="hmcri-des">
-                  <p>Proin massa mauris, ullamcorper ut dui sit amet, laoreet placerat lorem. Maecenas rutrum orci enim, non dapibus nunc scelerisque at. Fusce in mauris hendrerit, commodo turpis ac, faucibus nisl. Nulla dignissim suscipit iaculis. Maecenas et convallis nulla. Cras rhoncus euismod nisi, ut malesuada lacus facilisis quis. Fusce elementum sodales odio, sed efficitur augue convallis sed.</p>
-                  <span>03-02-2020</span>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="hm-customer-reviews-item">
-                <div class="hmcri-hdr">
-                  <h4 class="hmcri-hdr-title">
-                    <a href="#">
-                      <span>Richard</span>
-                      Hammond
-                    </a>
-                  </h4>
-                  <div class="reviews-stars">
-                    <a href="#"><i class="fas fa-star"></i></a>
-                    <a href="#"><i class="fas fa-star"></i></a>
-                    <a href="#"><i class="fas fa-star"></i></a>
-                    <a href="#"><i class="fas fa-star"></i></a>
-                    <a href="#"><i class="fas fa-star"></i></a>
-                  </div>
-                </div>
-                <div class="hmcri-des">
-                  <p>Nam pretium, velit eget tincidunt vehicula, lectus sem volutpat sapien, eget semper purus arcu ac metus. Etiam vitae gravida purus. Curabitur ultrices augue et ligula condimentum, nec sollicitudin nisi.</p>
-                  <span>17-03-2020</span>
-                </div>
-              </div>
-            </li>
+          <?php endwhile; ?>
           </ul>
           <div class="see-all-reviews-btn">
-            <a href="#">SEE ALL REVIEWS</a>
+            <a href="<?php echo esc_url(home_url('customer-reviews'));?>">SEE ALL REVIEWS</a>
           </div>
         </div>
       </div>
     </div>
-  </div>    
+  </div> 
+  <?php endif; wp_reset_postdata(); ?>      
 </section>
+<?php endif; ?>
 </div>
 
 
