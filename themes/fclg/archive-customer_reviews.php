@@ -85,7 +85,7 @@ if($query->have_posts()):
   </div>
 <?php 
   else:
-    echo '<div class="hasgap"></div>';
+    echo '<div class="hasgap">No Results!</div>';
   endif;  
   wp_reset_postdata();
 ?>
