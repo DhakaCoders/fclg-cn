@@ -86,7 +86,7 @@ if($query->have_posts()):
       <div class="col-sm-12">
         <div class="footer-tp-gallery-wrp">
           <div class="ftr-top-gallery-img">
-            <img src="<?php echo THEME_URI; ?>/<?php echo THEME_URI; ?>/assets/images/ftr-top-gallery-img.png">
+            <img src="<?php echo THEME_URI; ?>/assets/images/ftr-top-gallery-img.png">
           </div>
         </div>
       </div>
