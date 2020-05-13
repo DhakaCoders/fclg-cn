@@ -182,14 +182,16 @@ img{
 ul.reset-list,
 ol.reset-list,
 ul.sub-menu,
-.fl-pagi-pagi-ctlr ul{
+.fl-pagi-pagi-ctlr ul,
+.fc-pagination-wrp ul{
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
 .reset-list li,
 ul.sub-menu li,
-.fl-pagi-pagi-ctlr ul li{
+.fl-pagi-pagi-ctlr ul li,
+.fc-pagination-wrp ul li{
 	padding: 0;
 	margin: 0;
 	list-style: none;
@@ -197,7 +199,8 @@ ul.sub-menu li,
 }
 .reset-list li:before,
 ul.sub-menu li:before,
-.fl-pagi-pagi-ctlr ul li:before{
+.fl-pagi-pagi-ctlr ul li:before,
+.fc-pagination-wrp ul li:before{
 	content: none!important;
 }
 

@@ -109,7 +109,12 @@ fc-enty-list-box-sec-wrp
 	color: #fff;
 	border-color: #1A1C20;
 }
-
+.fc-pagination-wrp ul li:first-child a{
+	border-left: 1px solid #b8b8b8;
+}
+.fc-pagination-wrp ul li:first-child a:hover{
+	border-color: #1A1C20;
+}
 /*
 ------------------
  Responsive Css
