@@ -20,6 +20,15 @@
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+<?php 
+  $logoObj = get_field('logo_header', 'options');
+  if( is_array($logoObj) ){
+    $logo_tag = '<img src="'.$logoObj['url'].'" alt="'.$logoObj['alt'].'" title="'.$logoObj['title'].'">';
+  }else{
+    $logo_tag = '';
+  }
+  $smedias = get_field('header_media', 'options');
+?>
 <div class="bdoverlay"></div>
 <header class="header">
   <div class="header-inr clearfix">
@@ -39,14 +48,29 @@
           </div>
           <div class="hdr-topba-rgt">
             <div class="hdr-login-register-btns">
-              <a class="hdr-login-btn" href="#">Login</a>
-              <a class="hdr-register-btn" href="#">Register</a>
+              <?php 
+              if( is_user_logged_in() ){
+                foreach ( wc_get_account_menu_items() as $endpoint => $label ) : 
+                  if($endpoint == 'customer-logout'):
+              ?>
+              <a href="<?php echo esc_url( wc_get_account_endpoint_url( $endpoint ) ); ?>">Log out</a>
+              <?php endif; endforeach; 
+              } else {
+              ?>
+              <a class="hdr-login-btn" href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>">Login</a>
+              <?php } ?>
+              <a class="hdr-register-btn" href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>">Register</a>
             </div>
             <div class="hdr-cart-btn">
               <div class="hdr-cart-btn-inr">
                 <i>
                   <img src="<?php echo THEME_URI; ?>/assets/images/cart-icon.png">
-                  <span>1</span>
+                  <?php if(WC()->cart->get_cart_contents_count() > 0) {
+                      echo sprintf ( '<span>%d</span>', WC()->cart->get_cart_contents_count() );
+                    } else {
+                      echo sprintf ( '<span>%d</span>', 0 );
+                    }
+                  ?>
                 </i>
               </div>
             </div>
@@ -66,7 +90,9 @@
           <span>by our <u>Customers</u></span>
         </div>
         <div class="logo">
-          <a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/logo.png"></a>
+          <a href="<?php echo esc_url(home_url('/')); ?>">
+            <?php echo $logo_tag; ?>
+          </a>
         </div>
         <div class="hdr-navbar">
           <div class="hdr-humberger">
@@ -84,28 +110,28 @@
                   <span></span>
                   <span></span>
                 </div>
-                <ul class="clearfix reset-list">
-                  <li><a href="#">CURRENT COMPETITIONS</a></li>
-                  <li class="menu-item-has-children">
-                    <a href="#">ENTRY LISTS </a>
-                    <ul class="sub-menu">
-                      <li><a href="#">Sub menu item 1</a></li>
-                      <li><a href="#">Sub menu item 2</a></li>
-                      <li><a href="#">Sub menu item 3</a></li>
-                      <li><a href="#">Sub menu item 4</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#">WINNERS</a></li>
-                  <li><a href="#">FAQS</a></li>
-                  <li class="current-menu-item"><a href="#">HOW IT WORKS</a></li>
-                  <li><a href="#">ABOUT US</a></li>
-                </ul>
+                <?php 
+                  $menuOptionsb = array( 
+                      'theme_location' => 'cbv_main_menu', 
+                      'menu_class' => 'clearfix reset-list',
+                      'container' => '',
+                      'container_class' => ''
+                    );
+                  wp_nav_menu( $menuOptionsb ); 
+                ?>  
               </nav>
               <div class="hdr-social">
+                <?php if(!empty($smedias)): ?>
                 <ul class="reset-list">
-                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                  <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                  <?php foreach($smedias as $smedia):  ?>
+                    <li>
+                      <a target="_blank" href="<?php echo $smedia['url']; ?>">
+                        <?php echo $smedia['icon']; ?>
+                      </a>
+                    </li>
+                  <?php endforeach; ?>
                 </ul>
+                <?php endif; ?>
               </div>
             </div>
           </div>

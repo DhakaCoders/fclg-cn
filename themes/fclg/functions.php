@@ -22,9 +22,7 @@ if( !function_exists('cbv_theme_setup') ){
 		if(function_exists('add_theme_support')) {
 			add_theme_support('category-thumbnails');
 		}
-        add_image_size( 'bloggrid', 400, 280, true );
-        add_image_size( 'contactimg', 930, 396, true );
-        add_image_size( 'aboutgrid', 588, 420, true );
+        add_image_size( 'cwinnersgrid', 285, 216, true );
 
 
 		
@@ -41,9 +39,9 @@ if( !function_exists('cbv_theme_setup') ){
 		) );
 
 		register_nav_menus( array(
-          'cbv_main_menu' => __( 'Hoofdmenu', THEME_NAME ),
-          'cbv_fta_menu' => __( 'Footer Menu', THEME_NAME ),
-          'cbv_copyright_menu' => __( 'Copyright Menu', THEME_NAME ),
+          'cbv_main_menu' => __( 'Header Menu', THEME_NAME ),
+          'cbv_fta_menu' => __( 'Footer Menu 1', THEME_NAME ),
+          'cbv_ftb_menu' => __( 'Footer Menu 2', THEME_NAME )
 		) );
 
 	}
@@ -74,6 +72,7 @@ Includes->>
 include_once(THEME_DIR .'/inc/widgets-area.php');
 include_once(THEME_DIR .'/inc/breadcrumbs.php');
 include_once(THEME_DIR .'/inc/cbv-functions.php');
+include_once(THEME_DIR .'/inc/wc-functions.php');
 /**
 ACF Option pages->>
 */

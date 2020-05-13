@@ -1,0 +1,36 @@
+2020-05-13T03:51:47+00:00 CRITICAL Uncaught Error: Call to a member function get_id() on string in C:\xampp\htdocs\2020\04\fclg\fclg-cn\themes\fclg\templates\wc\product-stats.php:1
+Stack trace:
+#0 C:\xampp\htdocs\2020\04\fclg\wp-includes\template.php(725): require()
+#1 C:\xampp\htdocs\2020\04\fclg\wp-includes\template.php(672): load_template('C:\\xampp\\htdocs...', false)
+#2 C:\xampp\htdocs\2020\04\fclg\wp-includes\general-template.php(168): locate_template(Array, true, false)
+#3 C:\xampp\htdocs\2020\04\fclg\fclg-cn\themes\fclg\inc\wc-functions.php(147): get_template_part('templates/wc/pr...', 'stats')
+#4 C:\xampp\htdocs\2020\04\fclg\wp-includes\class-wp-hook.php(287): get_product_stats('')
+#5 C:\xampp\htdocs\2020\04\fclg\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#6 C:\xampp\htdocs\2020\04\fclg\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#7 C:\xampp\htdocs\2020\04\fclg\fclg-cn\themes\fclg\woocommerce\content-single-product.php(86): do_action('wc_product_stat...')
+#8 C:\xampp\htdocs\2020\04\fclg\wp-include in C:\xampp\htdocs\2020\04\fclg\fclg-cn\themes\fclg\templates\wc\product-stats.php on line 1
+
+2020-05-13T05:31:25+00:00 CRITICAL Uncaught Error: Call to a member function have_posts() on null in C:\xampp\htdocs\2020\04\fclg\fclg-cn\themes\fclg\front-page.php:154
+Stack trace:
+#0 C:\xampp\htdocs\2020\04\fclg\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\2020\04\fclg\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\2020\04\fclg\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\2020\04\fclg\fclg-cn\themes\fclg\front-page.php on line 154
+
+2020-05-13T06:08:20+00:00 CRITICAL Uncaught Error: Call to a member function have_posts() on null in C:\xampp\htdocs\2020\04\fclg\fclg-cn\themes\fclg\front-page.php:266
+Stack trace:
+#0 C:\xampp\htdocs\2020\04\fclg\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\2020\04\fclg\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\2020\04\fclg\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\2020\04\fclg\fclg-cn\themes\fclg\front-page.php on line 266
+
+2020-05-13T06:32:31+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Query as array in C:\xampp\htdocs\2020\04\fclg\fclg-cn\themes\fclg\front-page.php:319
+Stack trace:
+#0 C:\xampp\htdocs\2020\04\fclg\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\2020\04\fclg\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\2020\04\fclg\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\2020\04\fclg\fclg-cn\themes\fclg\front-page.php on line 319
+

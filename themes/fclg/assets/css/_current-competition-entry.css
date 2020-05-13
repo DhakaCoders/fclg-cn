@@ -1,3 +1,36 @@
+.lottery-time{
+	display: none;
+}
+.lottery-time.custom-lottery-time{
+	display: block !important;
+}
+p.cureent-participating {
+    display: none;
+}
+
+p.max-pariticipants {
+    display: none;
+}
+
+p.min-pariticipants {
+    display: none;
+}
+
+p.lottery-end {
+    display: none;
+}
+.wc-lottery-ajax p.max-pariticipants{
+	display: block;
+}
+p.stock.in-stock {
+    display: none;
+}
+.fl-product-summary-txt p {
+    display: inline;
+}
+.wcl-progress-meter {
+    display: none;
+}
 .fl-product-summary-sec{
 	background: #eaeaea;
 	padding: 50px 0 90px;
