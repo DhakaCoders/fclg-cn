@@ -61,7 +61,7 @@
           <?php endwhile; ?>
           </ul>
           <div class="view-all-btn">
-            <a href="#">VIEW ALL ENDED</a>
+            <a href="<?php echo esc_url( home_url('ended-competitions') );  ?>">VIEW ALL ENDED</a>
           </div>
         </div>
       </div>
