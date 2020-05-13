@@ -86,16 +86,16 @@ do_action( 'woocommerce_before_cart' ); ?>
 
 						do_action( 'woocommerce_after_cart_item_name', $cart_item, $cart_item_key );
 
-						// Meta data.
-						echo wc_get_formatted_cart_item_data( $cart_item ); // PHPCS: XSS ok.
-
-
-
 						?>
 						<div class="cat-tble-des">
-							<p>Question: <strong>Which is another model produced by Lamborghini?</strong></p>
-							<p>Your Answer: <strong>Huracan</strong></p>
-							<p><strong class="cart-tbl-price">£14.50</strong></p>
+						<?php // Meta data.
+						echo wc_get_formatted_cart_item_data( $cart_item ); // PHPCS: XSS ok.
+						?>
+							<p><strong class="cart-tbl-price">
+								<?php
+								echo apply_filters( 'woocommerce_cart_item_subtotal', WC()->cart->get_product_subtotal( $_product, $cart_item['quantity'] ), $cart_item, $cart_item_key ); // PHPCS: XSS ok.
+							?>
+							</strong></p>
 						</div>
 						<?php
 						// Backorder notification.
