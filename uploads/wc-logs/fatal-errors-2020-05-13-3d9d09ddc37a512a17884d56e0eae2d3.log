@@ -34,3 +34,5 @@ Stack trace:
 #3 {main}
   thrown in C:\xampp\htdocs\2020\04\fclg\fclg-cn\themes\fclg\front-page.php on line 319
 
+2020-05-13T10:43:53+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\2020\04\fclg\wp-includes\Requests\Transport\cURL.php on line 163
+
