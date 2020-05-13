@@ -123,9 +123,20 @@ p.stock.in-stock {
 	font-size: 18px;
 	line-height: 1;
 	color: #917164;
-	font-weight: 18px;
+	font-weight: 600;
 	margin-right: 13px;
+	font-family: 'Montserrat', sans-serif;
 
+}
+.fl-pro-summary-prices ins{
+	font-weight: 700;
+    font-size: 36px;
+    line-height: 1;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #212429;
+    display: inline-block;
+    vertical-align: baseline;
 }
 .fl-pro-summary-prices div label{
 	font-size: 16px;
@@ -286,7 +297,41 @@ p.stock.in-stock {
 	font-weight: 600;
 }
 
+.woocommerce .fl-pro-summary-qty .quantity{
+	max-width: 120px;
+	width: 100%;
+}
+.woocommerce .fl-pro-summary-qty .quantity .qty{
+	width: 100%;
+	text-align: left;
+    padding-left: 17px;
+    color: #DF0025;
+    font-size: 30px;
+    line-height: 1;
+    font-weight: 600;
+}
 
+.woocommerce .fl-pro-summary-qty button.single_add_to_cart_button.button{
+	width: 170px;
+    height: 60px;
+    display: flex!important;
+    align-items: center!important;
+    justify-content: center!important;
+    color: #fff!important;
+    background: #70bb60!important;
+    border: none;
+    text-transform: uppercase!important;
+    font-weight: 600!important;
+    border-radius: 0 10px 10px 0!important;
+    cursor: pointer;
+}
+.woocommerce .fl-pro-summary-qty button.single_add_to_cart_button.button:hover{
+	background-color: #62a055!important;
+}
+.fl-pro-summary-prices > div label{
+	text-align: center;
+	display: block;
+}
 .product-stats-section{
 	background:#B20026;
 	padding: 45px 0 25px; 
@@ -388,8 +433,35 @@ p.stock.in-stock {
 .main-lottery{
 	text-align: left;
 }
-
-
+.cart.pick-number > h3{
+	display: none;
+}
+.lottery-question{
+	font-size: 20px;
+	line-height: 1;
+	font-weight: 700;
+}
+ul.lottery-pn-answers li{
+	background: #fff;
+	color: #dc0026;
+}
+ul.lottery-pn-answers li.selected{
+	border-color: #dc0026;
+	background-color: #dc0026!important;
+	color: #fff;
+}
+.lottery-pn-answers{
+	margin-bottom: 30px;
+}
+.wc_lottery_countdown-section{
+	text-align: left!important;
+}
+#countdown .main-lottery .wc_lotery_countdown-row{
+	text-align: left!important;
+}
+#countdown .main-lottery span.wc_lottery_countdown-section{
+	text-align: left!important;
+}
 @media(max-width: 1499px){
 
 }
@@ -468,6 +540,9 @@ p.stock.in-stock {
 	}
 	.pro-stat-grd-item-des strong{
 		font-size: 22px;
+	}
+	.woocommerce span.onsale{
+		left: 0;
 	}
 
 }
