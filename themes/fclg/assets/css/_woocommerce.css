@@ -778,12 +778,12 @@ input.select2-search__field{
 
 .cart-form{
 	float: left;
-	width: 80%;
+	width: 77%;
 	padding-right: 20px;
 }
 .cart-wrapp .cart-collaterals{
 	float: left!important;
-	width: 20%!important;
+	width: 23%!important;
 }
 .cart-wrapp .cart-collaterals .cart_totals {
 	width: 100%!important;
@@ -1072,6 +1072,18 @@ body.woocommerce-checkout .page-section{
 .woocommerce #order_review table.shop_table.woocommerce-checkout-review-order-table td{
 	border-top: 1px solid #dddddd!important;
 	border-bottom: none!important;
+}
+.woocommerce-cart #cart-form dt.variation-Question,
+.woocommerce-cart #cart-form dt.variation-Answer{
+	font-weight: 400!important;
+	font-size: 16px;
+	line-height: 1;
+}
+.woocommerce-cart #cart-form .variation-Answer p,
+.woocommerce-cart #cart-form .variation-Question p{
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.2;
 }
 @media(max-width: 991px){
 	.woocommerce #customer_details .col-1,
