@@ -115,6 +115,11 @@
           <div class="hmNewCompitionsSecSlideItem">
             <div class="fl-pro-grd-item">
               <div class="fl-pro-grd-item-fea-img">
+                <?php 
+                  if ( $product->is_on_sale() ) :
+                  echo '<div class="fl-pro-sale-text">SALE</div>';
+                  endif;
+                ?>
                 <a href="<?php echo get_permalink( $product->get_id() ); ?>">
                   <?php echo wp_get_attachment_image( get_post_thumbnail_id($product->get_id()), 'pgrid' ); ?>
                 </a>

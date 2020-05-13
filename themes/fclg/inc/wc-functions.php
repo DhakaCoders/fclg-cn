@@ -87,7 +87,7 @@ remove_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_template_l
 remove_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_price', 10 );
 remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_product_link_close', 5 );
 remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10 );
-
+remove_action('woocommerce_before_shop_loop_item_title', 'woocommerce_show_product_loop_sale_flash', 10);
 add_action('woocommerce_shop_loop_item_title', 'add_shorttext_below_title_loop', 5);
 if (!function_exists('add_shorttext_below_title_loop')) {
     function add_shorttext_below_title_loop() {
@@ -95,6 +95,9 @@ if (!function_exists('add_shorttext_below_title_loop')) {
 
         echo '<div class="fl-pro-grd-item">';
         echo '<div class="fl-pro-grd-item-fea-img">';
+        if ( $product->is_on_sale() ) :
+        echo '<div class="fl-pro-sale-text">SALE</div>';
+        endif;
         echo '<a href="'.get_permalink( $product->get_id() ).'">';
         echo wp_get_attachment_image( get_post_thumbnail_id($product->get_id()), 'pgrid' );
         echo '</a>';
@@ -121,7 +124,7 @@ if (!function_exists('add_shorttext_below_title_loop')) {
 
 
 
-//remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_title', 5 );
+remove_action( 'woocommerce_before_single_product_summary', 'woocommerce_show_product_sale_flash', 10 );
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_rating', 10 );
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 10 );
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20 );
@@ -232,4 +235,9 @@ function add_custom_fields_order_item_meta( $item_id, $cart_item, $cart_item_key
         
     }
 
+}
+
+//add_filter( 'woocommerce_sale_flash', 'lw_replace_sale_text' );
+function lw_replace_sale_text( $html ) {
+return str_replace( __( 'Sale!', 'woocommerce' ), __( 'Offer Discount', 'woocommerce' ), $html );
 }

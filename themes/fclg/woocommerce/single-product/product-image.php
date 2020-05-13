@@ -41,7 +41,9 @@ $attachId = get_post_thumbnail_id(get_the_ID());
 
   <?php if( !empty($attachId) ): ?>
     <div class="proGallerySlideItem">
-      <div class="fl-pro-sale-text">Sale</div>
+       <?php if ( $product->is_on_sale() ) : ?>
+          <div class="fl-pro-sale-text">Sale</div>
+        <?php endif;?>
         <?php echo cbv_get_image_tag($attachId, 'full'); ?>
       </div>
   <?php endif; ?>
@@ -50,7 +52,9 @@ $attachId = get_post_thumbnail_id(get_the_ID());
       foreach ( $attachment_ids as $attachment_id ) {
       ?>
       <div class="proGallerySlideItem">
+        <?php if ( $product->is_on_sale() ) : ?>
           <div class="fl-pro-sale-text">Sale</div>
+        <?php endif;?>
             <?php echo cbv_get_image_tag($attachment_id, 'full'); ?>
           </div>
       <?php
