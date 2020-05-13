@@ -22,6 +22,8 @@ if( !function_exists('cbv_theme_setup') ){
 		if(function_exists('add_theme_support')) {
 			add_theme_support('category-thumbnails');
 		}
+        add_image_size( 'slider', 796, 320, true );
+        add_image_size( 'sliderthumb', 245, 204, true );
         add_image_size( 'cwinnersgrid', 285, 216, true );
 
 

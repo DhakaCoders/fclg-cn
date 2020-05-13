@@ -1,114 +1,66 @@
 <?php get_header(); ?>
 <div class="home-page-sections-cntlr">
+<?php  
+  $slides = get_field('slidessec', HOMEID);
+  $hslides = $slides['slides'];
+  if($hslides):
+?>
 <section class="main-slider-section">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="main-slider-sec-cntlr">
           <div class="main-slider mainSlider">
+            <?php
+              foreach( $hslides as $hslide ): 
+            ?>
             <div class="mainSlideItem clearfix">
               <div class="mainSlideItemInner clearfix">
                 <div class="main-slide-item-lft">
+                <?php if( !empty($hslide['image']) ): ?>
                 <div class="main-slide-full-img">
-                  <img src="<?php echo THEME_URI; ?>/assets/images/home-main-slide-img-01.jpg">
+                  <?php echo cbv_get_image_tag($hslide['image'], 'slider'); ?>
                 </div>
+                <?php endif; ?>
                 <div class="main-slide-product-title">
                   <div class="fl-pro-grd-item-title">
                     <span class="title-angle"></span>
-                    <strong><a href="#">2012 Ferrari 458 Italia 2dr Auto 4.5 </a></strong>
+                    <?php if( !empty($hslide['link']) ): ?>
+                    <strong><a href="<?php echo $hslide['link']; ?>"><?php echo $hslide['title']; ?></a></strong>
+                    <?php else: ?>
+                      <strong><?php echo $hslide['title']; ?></strong>
+                    <?php endif; ?>
                   </div>
                 </div>
+                <?php 
+                $galleries = $hslide['gallery']; 
+                if( $galleries ):
+                ?>
                 <div class="main-slide-thumb-imges clearfix">
+                  <?php foreach( $galleries as $gitem ): ?>
+                  <?php if( !empty($gitem['id']) ){ ?>
                   <div class="main-slider-thumb-img">
-                    <img src="<?php echo THEME_URI; ?>/assets/images/main-slider-thumb-img-01.jpg">
+                    <?php echo cbv_get_image_tag($gitem['id'], 'sliderthumb'); ?>
                   </div>
-                  <div class="main-slider-thumb-img">
-                    <img src="<?php echo THEME_URI; ?>/assets/images/main-slider-thumb-img-02.jpg">
-                  </div>
-                  <div class="main-slider-thumb-img">
-                    <img src="<?php echo THEME_URI; ?>/assets/images/main-slider-thumb-img-03.jpg">
-                  </div>
+                <?php } ?>
+                  <?php endforeach; ?>
                 </div>
+                <?php endif; ?>
               </div>
               <div class="main-slide-item-rgt">
-                <span>Could this be
-                  your new car?</span>
-                <strong>WIN THE KEYS AND DRIVE AWAY!</strong>
-                <a href="#"><span>ENTER NOW</span></a>
+                <?php if( !empty($hslide['description']) ) printf( '%s', $hslide['description'] ); ?>
+                <?php if( !empty($hslide['link']) ) printf('<a href="%s"><span>ENTER NOW</span></a>', $hslide['link']); ?>
               </div>
               </div>
             </div>
-            <div class="mainSlideItem clearfix">
-              <div class="mainSlideItemInner clearfix">
-                <div class="main-slide-item-lft">
-                <div class="main-slide-full-img">
-                  <img src="<?php echo THEME_URI; ?>/assets/images/home-main-slide-img-01.jpg">
-                </div>
-                <div class="main-slide-product-title">
-                  <div class="fl-pro-grd-item-title">
-                    <span class="title-angle"></span>
-                    <strong><a href="#">2012 Ferrari 458 Italia 2dr Auto 4.5 </a></strong>
-                  </div>
-                </div>
-                <div class="main-slide-thumb-imges clearfix">
-                  <div class="main-slider-thumb-img">
-                    <img src="<?php echo THEME_URI; ?>/assets/images/main-slider-thumb-img-01.jpg">
-                  </div>
-                  <div class="main-slider-thumb-img">
-                    <img src="<?php echo THEME_URI; ?>/assets/images/main-slider-thumb-img-02.jpg">
-                  </div>
-                  <div class="main-slider-thumb-img">
-                    <img src="<?php echo THEME_URI; ?>/assets/images/main-slider-thumb-img-03.jpg">
-                  </div>
-                </div>
-              </div>
-              <div class="main-slide-item-rgt">
-                <span>Could this be
-                  your new car?</span>
-                <strong>WIN THE KEYS AND DRIVE AWAY!</strong>
-                <a href="#"><span>ENTER NOW</span></a>
-              </div>
-              </div>
-            </div>
-            <div class="mainSlideItem clearfix">
-              <div class="mainSlideItemInner clearfix">
-                <div class="main-slide-item-lft">
-                <div class="main-slide-full-img">
-                  <img src="<?php echo THEME_URI; ?>/assets/images/home-main-slide-img-01.jpg">
-                </div>
-                <div class="main-slide-product-title">
-                  <div class="fl-pro-grd-item-title">
-                    <span class="title-angle"></span>
-                    <strong><a href="#">2012 Ferrari 458 Italia 2dr Auto 4.5 </a></strong>
-                  </div>
-                </div>
-                <div class="main-slide-thumb-imges clearfix">
-                  <div class="main-slider-thumb-img">
-                    <img src="<?php echo THEME_URI; ?>/assets/images/main-slider-thumb-img-01.jpg">
-                  </div>
-                  <div class="main-slider-thumb-img">
-                    <img src="<?php echo THEME_URI; ?>/assets/images/main-slider-thumb-img-02.jpg">
-                  </div>
-                  <div class="main-slider-thumb-img">
-                    <img src="<?php echo THEME_URI; ?>/assets/images/main-slider-thumb-img-03.jpg">
-                  </div>
-                </div>
-              </div>
-              <div class="main-slide-item-rgt">
-                <span>Could this be
-                  your new car?</span>
-                <strong>WIN THE KEYS AND DRIVE AWAY!</strong>
-                <a href="#"><span>ENTER NOW</span></a>
-              </div>
-              </div>
-            </div>
-
+            <?php endforeach; ?>
           </div>
         </div>
       </div>
     </div>
   </div>    
 </section>
+<?php endif; ?>
 <?php
   $showhidencomp = get_field('showhidencomp', HOMEID);
   if( $showhidencomp ):

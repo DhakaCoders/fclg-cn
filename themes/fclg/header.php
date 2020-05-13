@@ -20,6 +20,8 @@
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0&appId=466258030197150&autoLogAppEvents=1"></script>
 <?php 
   $logoObj = get_field('logo_header', 'options');
   if( is_array($logoObj) ){
