@@ -1062,6 +1062,17 @@ body.woocommerce-checkout .page-section{
 .woocommerce span.onsale{
 	background: #b30027;
 }
+.woocommerce-Price-currencySymbol,
+.cart-tbl-price{
+	font-family: 'Montserrat', sans-serif;
+}
+#order_review .shop_table.woocommerce-checkout-review-order-table{
+	background: transparent;
+}
+.woocommerce #order_review table.shop_table.woocommerce-checkout-review-order-table td{
+	border-top: 1px solid #dddddd!important;
+	border-bottom: none!important;
+}
 @media(max-width: 991px){
 	.woocommerce #customer_details .col-1,
 	.woocommerce #customer_details .col-2 {
