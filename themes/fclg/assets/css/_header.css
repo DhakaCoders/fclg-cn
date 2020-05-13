@@ -81,6 +81,10 @@
 	align-items: center;
 	justify-content: center;
 }
+.hdr-cart-btn-inr a{
+	display: inline-block;
+	vertical-align: baseline;
+}
 .hdr-cart-btn-inr i{
 	position: relative;
 }
@@ -91,7 +95,7 @@
     font-weight: 700;
     position: absolute;
     right: 5.5px;
-    top: 13px;
+    top: 7px;
     font-style: normal;
 }
 

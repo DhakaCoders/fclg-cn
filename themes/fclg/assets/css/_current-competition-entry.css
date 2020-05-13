@@ -380,6 +380,14 @@ p.stock.in-stock {
 	display: block;
 }
 
+.custom-lottery-time >h3{
+	font-size: 20px;
+	line-height: 1;
+	margin-bottom: 30px;
+}
+.main-lottery{
+	text-align: left;
+}
 
 
 @media(max-width: 1499px){

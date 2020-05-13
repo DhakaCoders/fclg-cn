@@ -914,14 +914,12 @@ td.product-thumbnail a img{
 .order-total strong{
 	display: block;
 	text-align: right;
-	font-family: 'Montserrat', sans-serif;
 }
 .cart-wrapp{
 	padding-bottom: 70px;
 }
 .cart-tbl-price,
 .woocommerce-Price-amount.amount{
-	font-family: 'Montserrat', sans-serif;
 	font-weight: 600;
 }
 th.product-subtotal{
@@ -1059,6 +1057,10 @@ body.woocommerce-checkout .page-section{
 }
 #customer_login .u-column2.col-2 h2{
 	color: #B20026;
+}
+
+.woocommerce span.onsale{
+	background: #b30027;
 }
 @media(max-width: 991px){
 	.woocommerce #customer_details .col-1,
