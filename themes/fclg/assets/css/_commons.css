@@ -183,7 +183,8 @@ ul.reset-list,
 ol.reset-list,
 ul.sub-menu,
 .fl-pagi-pagi-ctlr ul,
-.fc-pagination-wrp ul{
+.fc-pagination-wrp ul,
+ul.lottery-pn-answers{
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -191,7 +192,8 @@ ul.sub-menu,
 .reset-list li,
 ul.sub-menu li,
 .fl-pagi-pagi-ctlr ul li,
-.fc-pagination-wrp ul li{
+.fc-pagination-wrp ul li,
+ul.lottery-pn-answers li{
 	padding: 0;
 	margin: 0;
 	list-style: none;
@@ -200,7 +202,8 @@ ul.sub-menu li,
 .reset-list li:before,
 ul.sub-menu li:before,
 .fl-pagi-pagi-ctlr ul li:before,
-.fc-pagination-wrp ul li:before{
+.fc-pagination-wrp ul li:before,
+ul.lottery-pn-answers li:before{
 	content: none!important;
 }
 
