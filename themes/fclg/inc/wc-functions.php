@@ -207,7 +207,9 @@ function add_custom_product_data( $cart_item_data, $product_id, $variation_id ) 
 add_filter('woocommerce_get_item_data', 'display_custom_item_data', 10, 2);
 
 function display_custom_item_data($item_data, $cart_item) {
-
+        if ( empty( $cart_item['lottery_question'] ) ) {
+            return $item_data;
+        }
         $question = maybe_unserialize( get_post_meta( $cart_item['product_id'], '_lottery_question', true ) );
 
         $item_data[] = array(
