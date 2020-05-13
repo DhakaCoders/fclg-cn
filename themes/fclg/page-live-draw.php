@@ -16,7 +16,18 @@ $thisID = get_the_ID();
         <div class="row">
           <div class="col-sm-12">
             <div class="live-draws-page-hdr-con">
+              <?php 
+                $live_embed = get_field('live_embed', $thisID);
+                if( !empty($live_embed) ):
+              ?>
+                <div class="fbvideo-live">
+                  <div class="fb-video-embaded">
+                    <?php echo $live_embed; ?>
+                  </div>
+                </div>
+              <?php else: ?>
               <strong>NOT CURRENTLY LIVE</strong>
+              <?php endif; ?>
             </div>
           </div>
         </div>
