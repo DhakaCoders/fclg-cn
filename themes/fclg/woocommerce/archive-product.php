@@ -102,4 +102,7 @@ do_action( 'woocommerce_after_main_content' );
  */
 do_action( 'woocommerce_sidebar' );
 
+/* custom action*/
+
+do_action('recent_ended_competition');
 get_footer( 'shop' );

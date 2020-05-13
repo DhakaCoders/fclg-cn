@@ -18,7 +18,7 @@ $intro = get_field('introsec', $thisID);
   </div>  
   <?php 
     $srooms_query = new WP_Query(array( 
-      'post_type'=> 'faqs',
+      'post_type'=> 'faq',
       'post_status' => 'publish',
       'posts_per_page' => -1,
       'orderby' => 'date',

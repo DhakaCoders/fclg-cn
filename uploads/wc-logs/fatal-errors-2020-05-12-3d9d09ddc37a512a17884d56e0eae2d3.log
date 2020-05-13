@@ -1,0 +1,58 @@
+2020-05-12T06:50:16+00:00 CRITICAL Uncaught Error: Call to undefined function wc_stock_manage() in C:\xampp\htdocs\2020\04\fclg\fclg-cn\themes\fclg\inc\wc-functions.php:84
+Stack trace:
+#0 C:\xampp\htdocs\2020\04\fclg\wp-includes\class-wp-hook.php(287): add_shorttext_below_title_loop('')
+#1 C:\xampp\htdocs\2020\04\fclg\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 C:\xampp\htdocs\2020\04\fclg\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\2020\04\fclg\fclg-cn\themes\fclg\woocommerce\content-product.php(49): do_action('woocommerce_sho...')
+#4 C:\xampp\htdocs\2020\04\fclg\wp-includes\template.php(725): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\2020\04\fclg\fclg-cn\plugins\woocommerce\includes\wc-core-functions.php(197): load_template('C:\\xampp\\htdocs...', false)
+#6 C:\xampp\htdocs\2020\04\fclg\fclg-cn\themes\fclg\woocommerce\archive-product.php(70): wc_get_template_part('content', 'product')
+#7 C:\xampp\htdocs\2020\04\fclg\wp-includes\template-loader.php(106): include('C:\\xampp\\ht in C:\xampp\htdocs\2020\04\fclg\fclg-cn\themes\fclg\inc\wc-functions.php on line 84
+
+2020-05-12T06:50:57+00:00 CRITICAL Uncaught Error: Call to undefined function wc_stock_manage() in C:\xampp\htdocs\2020\04\fclg\fclg-cn\themes\fclg\inc\wc-functions.php:90
+Stack trace:
+#0 C:\xampp\htdocs\2020\04\fclg\wp-includes\class-wp-hook.php(287): add_shorttext_below_title_loop('')
+#1 C:\xampp\htdocs\2020\04\fclg\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 C:\xampp\htdocs\2020\04\fclg\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\2020\04\fclg\fclg-cn\themes\fclg\woocommerce\content-product.php(49): do_action('woocommerce_sho...')
+#4 C:\xampp\htdocs\2020\04\fclg\wp-includes\template.php(725): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\2020\04\fclg\fclg-cn\plugins\woocommerce\includes\wc-core-functions.php(197): load_template('C:\\xampp\\htdocs...', false)
+#6 C:\xampp\htdocs\2020\04\fclg\fclg-cn\themes\fclg\woocommerce\archive-product.php(70): wc_get_template_part('content', 'product')
+#7 C:\xampp\htdocs\2020\04\fclg\wp-includes\template-loader.php(106): include('C:\\xampp\\ht in C:\xampp\htdocs\2020\04\fclg\fclg-cn\themes\fclg\inc\wc-functions.php on line 90
+
+2020-05-12T06:52:01+00:00 CRITICAL Uncaught Error: Call to undefined function wc_stock_manage() in C:\xampp\htdocs\2020\04\fclg\fclg-cn\themes\fclg\inc\wc-functions.php:91
+Stack trace:
+#0 C:\xampp\htdocs\2020\04\fclg\wp-includes\class-wp-hook.php(287): add_shorttext_below_title_loop('')
+#1 C:\xampp\htdocs\2020\04\fclg\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 C:\xampp\htdocs\2020\04\fclg\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\2020\04\fclg\fclg-cn\themes\fclg\woocommerce\content-product.php(49): do_action('woocommerce_sho...')
+#4 C:\xampp\htdocs\2020\04\fclg\wp-includes\template.php(725): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\2020\04\fclg\fclg-cn\plugins\woocommerce\includes\wc-core-functions.php(197): load_template('C:\\xampp\\htdocs...', false)
+#6 C:\xampp\htdocs\2020\04\fclg\fclg-cn\themes\fclg\woocommerce\archive-product.php(70): wc_get_template_part('content', 'product')
+#7 C:\xampp\htdocs\2020\04\fclg\wp-includes\template-loader.php(106): include('C:\\xampp\\ht in C:\xampp\htdocs\2020\04\fclg\fclg-cn\themes\fclg\inc\wc-functions.php on line 91
+
+2020-05-12T15:29:05+00:00 CRITICAL Uncaught Error: Call to a member function get_meta_query() on null in C:\xampp\htdocs\2020\04\fclg\fclg-cn\themes\fclg\templates\wc-ended-templates.php:8
+Stack trace:
+#0 C:\xampp\htdocs\2020\04\fclg\wp-includes\template.php(725): require()
+#1 C:\xampp\htdocs\2020\04\fclg\wp-includes\template.php(672): load_template('C:\\xampp\\htdocs...', false)
+#2 C:\xampp\htdocs\2020\04\fclg\wp-includes\general-template.php(168): locate_template(Array, true, false)
+#3 C:\xampp\htdocs\2020\04\fclg\fclg-cn\themes\fclg\inc\wc-functions.php(45): get_template_part('templates/wc-en...', 'templates')
+#4 C:\xampp\htdocs\2020\04\fclg\wp-includes\class-wp-hook.php(287): get_recent_competition('')
+#5 C:\xampp\htdocs\2020\04\fclg\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#6 C:\xampp\htdocs\2020\04\fclg\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#7 C:\xampp\htdocs\2020\04\fclg\fclg-cn\themes\fclg\woocommerce\archive-product.php(107): do_action('recent_ended_co...')
+#8 C:\xampp\htdocs\2020\04\fclg\ in C:\xampp\htdocs\2020\04\fclg\fclg-cn\themes\fclg\templates\wc-ended-templates.php on line 8
+
+2020-05-12T20:27:20+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in C:\xampp\htdocs\2020\04\fclg\fclg-cn\plugins\woocommerce-lottery-pick-number\templates\single-product\add-to-cart\lottery.php on line 42
+
+2020-05-12T20:54:03+00:00 CRITICAL Uncaught Error: Call to a member function get_price_html() on null in C:\xampp\htdocs\2020\04\fclg\fclg-cn\themes\fclg\inc\wc-functions.php:139
+Stack trace:
+#0 C:\xampp\htdocs\2020\04\fclg\wp-includes\class-wp-hook.php(287): get_lottery_price('')
+#1 C:\xampp\htdocs\2020\04\fclg\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 C:\xampp\htdocs\2020\04\fclg\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\2020\04\fclg\fclg-cn\themes\fclg\woocommerce\single-product\add-to-cart\lottery.php(60): do_action('lottery_price')
+#4 C:\xampp\htdocs\2020\04\fclg\fclg-cn\plugins\woocommerce\includes\wc-core-functions.php(251): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\2020\04\fclg\fclg-cn\plugins\woocommerce-lottery\public\class-wc-lottery-public.php(653): wc_get_template('single-product/...')
+#6 C:\xampp\htdocs\2020\04\fclg\wp-includes\class-wp-hook.php(287): wc_lottery_Public->woocommerce_lottery_add_to_cart('')
+#7 C:\xampp\htdocs\2020\04\fclg\wp-includes\class-wp-h in C:\xampp\htdocs\2020\04\fclg\fclg-cn\themes\fclg\inc\wc-functions.php on line 139
+

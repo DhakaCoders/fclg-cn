@@ -18,5 +18,11 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
+/* custom action */
+do_action( 'wc_product_subtitle' );
 
-the_title( '<h1 class="product_title entry-title">', '</h1>' );
+the_title( '<h2 class="fl-product-summary-title-2">', '</h2>' );
+
+/* custom action */
+do_action('wc_lottery_countdown');
+do_action('wc_short_description');

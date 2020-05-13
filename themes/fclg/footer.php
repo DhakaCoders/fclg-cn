@@ -1,3 +1,8 @@
+<?php 
+  $aboutus = get_field('aboutus', 'options');
+  $copyright_text = get_field('copyright_text', 'options');
+  $smedias = get_field('sociale_media', 'options');
+?>
 <footer class="footer-wrp">
   <div class="ftr-top">
     <div class="container-md">
@@ -5,39 +10,46 @@
         <div class="col-12">
           <div class="ftr-col-main clearfix">
             <div class="ftr-col ftr-col-1">
-              <h6><span>HELPFUL</span></h6>
-              <ul class="clearfix reset-list">
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">How It Works</a></li>
-                <li><a href="#">FAQs</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms and Conditions</a></li>
-              </ul>
+              <h6><span><?php _e( 'HELPFUL', THEME_NAME ); ?></span></h6>
+              <?php 
+                $fmenuOptionsa = array( 
+                    'theme_location' => 'cbv_fta_menu', 
+                    'menu_class' => 'clearfix reset-list',
+                    'container' => '',
+                    'container_class' => ''
+                  );
+                wp_nav_menu( $fmenuOptionsa ); 
+              ?>
             </div>
             <div class="ftr-col ftr-col-2"> 
-              <h6><span>PROFILE</span></h6>
-              <ul class="clearfix reset-list">
-                <li><a href="#">Register</a></li>
-                <li><a href="#">Login</a></li>
-                <li><a href="#">My Account</a></li>
-              </ul>
+              <h6><span><?php _e( 'PROFILE', THEME_NAME ); ?></span></h6>
+              <?php 
+                $fmenuOptionsb = array( 
+                    'theme_location' => 'cbv_ftb_menu', 
+                    'menu_class' => 'clearfix reset-list',
+                    'container' => '',
+                    'container_class' => ''
+                  );
+                wp_nav_menu( $fmenuOptionsb ); 
+              ?>
             </div>
             <div class="ftr-col ftr-col-3 clearfix">
-              <h6><span>ABOUT US</span></h6>
-              <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies magna vitae neque porttitor eleifend. Aliquam laoreet quis urna nec molestie. Sed non odio vitae tellus interdum scelerisque id nec leo. </p>
+              <?php 
+              if( !empty($aboutus['title']) ) printf('<h6><span>%s</span></h6>', $aboutus['title']);
+              if( !empty($aboutus['description']) ) echo wpautop($aboutus['description']);
+              ?>
               <div class="ftr-socail-icon clearfix">
+                <?php if(!empty($smedias)): ?>
                 <ul class="clearfix reset-list">
-                  <li>
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                 </li>
-                  <li>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
-                  </li>
-                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  <?php foreach($smedias as $smedia):  ?>
+                    <li>
+                      <a target="_blank" href="<?php echo $smedia['url']; ?>">
+                        <?php echo $smedia['icon']; ?>
+                      </a>
+                    </li>
+                  <?php endforeach; ?>
                 </ul>
+                <?php endif; ?>
               </div>              
             </div>
           </div>
@@ -51,7 +63,7 @@
         <div class="col-12">
           <div class="ftr-btm-innr clearfix">
             <div class="ftr-btm-col-1">
-              <p>&copy; 2020 Race-Line Competitions. All Rights Reserved.</p>
+              <?php if( !empty( $copyright_text ) ) printf( '<span>%s</span>', $copyright_text); ?>
             </div>
           </div>
         </div>
