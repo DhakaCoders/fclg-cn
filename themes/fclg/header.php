@@ -65,15 +65,17 @@
             </div>
             <div class="hdr-cart-btn">
               <div class="hdr-cart-btn-inr">
-                <i>
-                  <img src="<?php echo THEME_URI; ?>/assets/images/cart-icon.png">
-                  <?php if(WC()->cart->get_cart_contents_count() > 0) {
-                      echo sprintf ( '<span>%d</span>', WC()->cart->get_cart_contents_count() );
-                    } else {
-                      echo sprintf ( '<span>%d</span>', 0 );
-                    }
-                  ?>
-                </i>
+                <a href="#">
+                  <i>
+                    <img src="<?php echo THEME_URI; ?>/assets/images/cart-icon.png">
+                    <?php if(WC()->cart->get_cart_contents_count() > 0) {
+                        echo sprintf ( '<span>%d</span>', WC()->cart->get_cart_contents_count() );
+                      } else {
+                        echo sprintf ( '<span>%d</span>', 0 );
+                      }
+                    ?>
+                  </i>
+                </a>
               </div>
             </div>
           </div>
