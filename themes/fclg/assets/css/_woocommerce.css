@@ -1233,6 +1233,9 @@ body.woocommerce-checkout .page-section{
 	#order_review .woocommerce-checkout-review-order-table{
 		width: 500px;
 	}
+	.woocommerce-billing-fields > h3, #order_review_heading{
+		font-size: 21px;
+	}
 }
 
 @media(max-width: 479px){
