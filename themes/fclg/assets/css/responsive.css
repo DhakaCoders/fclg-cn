@@ -82,6 +82,8 @@
 	}
 	.full-width-bdr-title span{
 		font-size: 23px;
+		display: block;
+		text-align: center;
 	}
 	.full-width-bdr-title span{
 		background: transparent;
