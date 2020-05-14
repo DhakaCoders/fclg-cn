@@ -1239,7 +1239,8 @@ body.woocommerce-checkout .page-section{
 	.woocommerce-billing-fields > h3, #order_review_heading{
 		font-size: 21px;
 	}
-	.no-download{
+	.no-download,
+	.no-order{
 		display: block;
 		width: 100%;
 		padding-bottom: 20px;
