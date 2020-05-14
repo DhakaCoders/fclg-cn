@@ -1226,10 +1226,9 @@ body.woocommerce-checkout .page-section{
 	.woocommerce-cart #cart-form .variation-Answer p, .woocommerce-cart #cart-form .variation-Question p{
 		font-size: 14px;
 	}
-	#order_review{
+	#order_review .order-review-ctrl{
 		overflow-x: scroll;
 	    overflow-y: hidden;
-	    white-space: nowrap;
 	}
 	#order_review .woocommerce-checkout-review-order-table{
 		width: 500px;
