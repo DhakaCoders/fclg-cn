@@ -44,6 +44,7 @@ if($query->have_posts()):
                     <a href="#" class="overlay-link"></a>
                   </div>
                 <?php } ?>
+                </div>
                 <div class="fc-cw-post-grid-dsc mHc">
                   <h5 class="fc-cw-post-grid-dsc-title mHc1"><a href="#"><?php the_title(); ?></a></h5>
                   <span><?php echo get_the_date('m/d/Y'); ?></span>
