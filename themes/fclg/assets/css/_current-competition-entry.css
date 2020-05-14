@@ -45,6 +45,16 @@ p.stock.in-stock {
 	padding: 0 0 0 40px;
 	float: left;
 }
+.single-product .woocommerce-notices-wrapper{
+	padding-bottom: 0!important;
+	margin-bottom: 0!important;
+}
+.woocommerce-error, 
+.woocommerce-info, 
+.woocommerce-message{
+	margin-bottom: 0!important;
+	padding-bottom: 25px!important;
+}
 
 .proGallerySlider{
 	margin: 0 0 5px 0!important;
@@ -56,6 +66,12 @@ p.stock.in-stock {
 .proGallerySlideItem img,
 .flProGgalleryThumbPagi-item img{
 	width: 100%;
+}
+.flProGgalleryThumbPagi-item > div img{
+	border: 2px solid #eaeaea;
+}
+.flProGgalleryThumbPagi-item.slick-current > div img{
+	border: 2px solid #D81D3C;
 }
 .flProGgalleryThumbPagi-item div{
 	padding: 0 5px;
