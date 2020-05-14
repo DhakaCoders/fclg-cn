@@ -7,7 +7,7 @@ get_header();
 ?>
 <section class="recently-ended-sec">
   <div class="fl-sec-hdr-title">
-    <h1 class="full-width-bdr-title">
+    <h1 class="full-width-bdr-title blck-sec-bg-title">
       <span><i></i><em></em> Ended Competitions</span>
     </h1>
   </div>

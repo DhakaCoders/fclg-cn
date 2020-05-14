@@ -99,7 +99,8 @@
 	    padding-left: 0;
 	    padding-top: 20px;
 	}
-	.fl-sec-hdr-title.fl-sec-hdr-title-drk-cntlr .full-width-bdr-title span{
+	.fl-sec-hdr-title.fl-sec-hdr-title-drk-cntlr .full-width-bdr-title span,
+	.blck-sec-bg-title span{
 		color: #fff;
 	}
 	.fc-cw-post-grid-sec-wrp .full-width-bdr-title {

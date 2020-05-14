@@ -410,13 +410,10 @@ p.stock.in-stock {
 	background: #d70216;
 	color: #fff;
 }
-.fl-pro-details-tabs button.current .title-angle{
+.fl-pro-details-tabs button:first-child .title-angle{
 	border-right-color: #dddddd;
 }
-.fl-pro-details-tabs button.current:last-of-type .title-angle{
-	border-right-color: #1b1c20;
-}
-.fl-pro-details-tabs button .title-angle{
+.fl-pro-details-tabs button:last-child .title-angle{
 	border-right-color: #1b1c20;
 }
 
@@ -462,8 +459,47 @@ ul.lottery-pn-answers li.selected{
 #countdown .main-lottery .wc_lotery_countdown-row{
 	text-align: left!important;
 }
-#countdown .main-lottery span.wc_lottery_countdown-section{
+/*#countdown .main-lottery span.wc_lottery_countdown-section{
 	text-align: left!important;
+}
+.wc_lotery_countdown-section{
+	text-align: left!important;
+}*/
+.wc_lotery_countdown-amount{
+	font-size: 40px!important;
+	line-height: 1;
+	color: #D60215!important;
+	font-weight: 600!important;
+}
+.lottery-time-countdown.future.is-wc_lotery_countdown{
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+.lottery-countdown:after,
+.lottery-countdown:before,
+.custom-lottery-time:after,
+.custom-lottery-time:before{
+	content: "";
+	clear: both;
+	display: table;
+}
+.lottery-countdown{
+	padding-bottom: 10px;
+}
+.wc_lotery_countdown-section{
+	padding-right: 10px;
+	position: relative;
+}
+.wc_lotery_countdown-section:not(:last-child):after {
+    content: ":";
+    position: absolute;
+    top: 7px;
+    color: #D60215;
+    right: 0;
+    font-size: 43px;
+}
+.wc_lotery_countdown-period{
+	font-size: 15px!important;
 }
 @media(max-width: 1499px){
 
@@ -533,10 +569,10 @@ ul.lottery-pn-answers li.selected{
 		margin-bottom: 20px;
 	}
 	.fl-product-summary-title-2{
-		font-size: 30px;
+		font-size: 25px;
 	}
 	.fl-product-summary-title-1{
-		font-size: 18px;
+		font-size: 17px;
 	}
 	.pro-stat-grd-item i{
 		max-width: 50px;
@@ -547,11 +583,24 @@ ul.lottery-pn-answers li.selected{
 	.woocommerce span.onsale{
 		left: 0;
 	}
+	.tab-link span{
+		display: none;
+	}
+	.fl-pro-details-tabs button{
+		padding-left: 10px;
+		padding-right: 10px;
+		min-height: 55px;
+	}
 
 }
 
 @media(max-width: 479px){
-
+	.fl-pro-details-tabs button {
+	    padding-left: 8px;
+	    padding-right: 8px;
+	    min-height: 40px;
+	    font-size: 14px;
+	}
 
 }
 
