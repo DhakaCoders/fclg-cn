@@ -1001,6 +1001,15 @@ body.woocommerce-checkout .page-section{
 .woocommerce-checkout .sec-overlay-cntlr{
 	background: transparent!important;
 }
+.woocommerce-account .page-section{
+	padding-bottom: 50px;
+}
+.woocommerce-account .sec-overlay-cntlr{
+	background: transparent!important;
+}
+.woocommerce-account .woocommerce-EditAccountForm legend{
+	margin-bottom: 0;
+}
 @media(max-width: 1199px){
 	body.woocommerce-order-received .woocommerce ul.order_details{
 		padding-left: 15px;
@@ -1076,6 +1085,11 @@ body.woocommerce-checkout .page-section{
 	    padding-left: 0;
 	    float: none;
 	}
+	body.woocommerce-account #customer_login .u-column1.col-1 > h2, 
+	body.woocommerce-account #customer_login .u-column2.col-2 > h2{
+		margin-bottom: 0;
+		font-size: 28px;
+	}
 }
 @media(max-width: 768px){
 	.woocommerce-account .woocommerce-MyAccount-navigation{
@@ -1128,6 +1142,10 @@ body.woocommerce-checkout .page-section{
 	.woocommerce table.shop_table_responsive tr td::before, .woocommerce-page table.shop_table_responsive tr td::before{
 		padding-right: 10px;
 	}
+	.woocommerce-form.woocommerce-form-login.login{
+		margin-bottom: 40px;
+	}
+
 }
 
 @media(max-width: 767px){
@@ -1151,6 +1169,11 @@ body.woocommerce-checkout .page-section{
 	}
 	.woocommerce #customer_details .col-1{
 		padding-bottom: 20px;
+	}
+	.woocommerce .woocommerce-info, .woocommerce .woocommerce-error, 
+	.woocommerce .woocommerce-notices-wrapper ul, 
+	.woocommerce .woocommerce-message{
+		padding-right: 10px;
 	}
 }
 
@@ -1203,10 +1226,9 @@ body.woocommerce-checkout .page-section{
 	.woocommerce-cart #cart-form .variation-Answer p, .woocommerce-cart #cart-form .variation-Question p{
 		font-size: 14px;
 	}
-	#order_review{
+	#order_review .order-review-ctrl{
 		overflow-x: scroll;
 	    overflow-y: hidden;
-	    white-space: nowrap;
 	}
 	#order_review .woocommerce-checkout-review-order-table{
 		width: 500px;
