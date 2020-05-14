@@ -1175,6 +1175,9 @@ body.woocommerce-checkout .page-section{
 	.woocommerce .woocommerce-message{
 		padding-right: 10px;
 	}
+	.woocommerce-billing-fields > h3, #order_review_heading{
+		font-size: 25px;
+	}
 }
 
 
