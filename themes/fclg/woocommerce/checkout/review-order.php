@@ -17,7 +17,7 @@
 
 defined( 'ABSPATH' ) || exit;
 ?>
-<div class="order-review-ctrl">
+
 <table class="shop_table woocommerce-checkout-review-order-table">
 	<thead>
 		<tr>
@@ -109,4 +109,3 @@ defined( 'ABSPATH' ) || exit;
 
 	</tfoot>
 </table>
-</div>
