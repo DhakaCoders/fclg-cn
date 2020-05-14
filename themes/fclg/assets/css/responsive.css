@@ -100,6 +100,9 @@
 	.fl-sec-hdr-title.fl-sec-hdr-title-drk-cntlr .full-width-bdr-title span{
 		color: #fff;
 	}
+	.fc-cw-post-grid-sec-wrp .full-width-bdr-title {
+	    margin-bottom: 20px;
+	}
 
 }
 
