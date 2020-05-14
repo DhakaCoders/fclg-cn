@@ -7,15 +7,16 @@
 }
 
 .ncsecgrd-cntlr ul{
-	margin: 0 -10px;
+	margin: 0 -10px!important;
 }
 .ncsecgrd-cntlr ul li{
-	float: left;
-	width: 33.3333%;
-	padding: 0 10px 27px;
+	float: left!important;
+	width: 33.3333%!important;
+	padding: 0 10px 27px!important;
+	margin: 0!important;
 }
 .ncsecgrd-cntlr ul li:nth-child(3n+1){
-	clear: left;
+	clear: left!important;
 }
 
 .fl-pro-grd-item-fea-img a{
@@ -93,7 +94,7 @@
 	border-top: 32.5px solid transparent;
 	border-bottom: 32.5px solid transparent;
 	border-right: 30px solid #eaeaea;
-	right: 0;
+	right: -1px;
 	top: 0;
 	bottom: 0;
 }
@@ -190,20 +191,20 @@
 
 @media(max-width: 991px){
 	.ncsecgrd-cntlr ul li:nth-child(3n+1) {
-	    clear: initial;
+	    clear: initial!important;
 	}
 	.ncsecgrd-cntlr ul li:nth-child(2n+1) {
-	    clear: left;
+	    clear: left!important;
 	}
 	.ncsecgrd-cntlr ul li{
-		width: 50%;
+		width: 50%!important;
 	}
 	
 }
 
 @media(max-width: 639px){
 	.ncsecgrd-cntlr ul li{
-		width: 100%;
+		width: 100%!important;
 	}
 	.ncsecgrd-cntlr ul li .fl-pro-grd-item{
 		max-width: 375px;
