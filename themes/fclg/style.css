@@ -12,9 +12,3 @@ Text Domain: rlc
 */
 
 @import url('assets/css/main.css');
-.fb-video{
-	height: 380px;
-}
-.fb-video span{
-	height: 380px!important;
-}

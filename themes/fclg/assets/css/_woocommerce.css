@@ -855,9 +855,38 @@ body.woocommerce-checkout .page-section{
 #order_review table thead tr th{
 	border: none!important;
 }
+#order_review table .product-name{
+	width: 80%;
+}
+#order_review table tbody td.product-name{
+	color: #DF0025;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 1.2;
+}
+#order_review table tbody td.product-name .variation{
+	color: #333333;
+}
+#order_review table tbody td.product-name .variation p{
+	line-height: 1.2;
+}
+
+#order_review table tbody td.product-name .variation .variation-Question p,
+#order_review table tbody td.product-name .variation .variation-Answer p{
+	font-weight: 400;
+}
 #order_review table tbody,
 #order_review table tfoot{
 	background: #fff;
+}
+.woocommerce #order_review table.shop_table tbody th, 
+.woocommerce #order_review table.shop_table tfoot td, 
+.woocommerce #order_review table.shop_table tfoot th,
+.woocommerce #order_review table.shop_table tfoot td{
+	border: none!important;
+}
+.woocommerce #order_review table.shop_table.woocommerce-checkout-review-order-table td{
+	border: none!important;
 }
 
 
@@ -930,6 +959,7 @@ body.woocommerce-checkout .page-section{
 	font-size: 16px;
 	line-height: 1.2;
 }
+
 
 @media(max-width: 1199px){
 	body.woocommerce-order-received .woocommerce ul.order_details{
