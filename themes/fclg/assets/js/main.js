@@ -85,7 +85,6 @@ $('.faq-accordion-tab-row').removeClass('remove-border');
 });
 
 
-
 /**
 Slick slider
 */

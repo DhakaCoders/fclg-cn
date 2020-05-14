@@ -120,6 +120,9 @@
 	background: transparent;
 	color: #70BA61;
 }
+.fc-modal-dsc-img img{
+	width: 100%;
+}
 
 /*
 ------------------

@@ -181,7 +181,9 @@ footer-tp-gallery-sec-wrp
 }
 
 @media(max-width: 575px){
-  
+  .footer-tp-gallery-sec-wrp{
+    padding-top: 10px;
+  }
 
 }
 

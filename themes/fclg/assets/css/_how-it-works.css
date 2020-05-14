@@ -127,6 +127,9 @@
 	.hiwsd-title {
 	    font-size: 27px;
 	}
+	.hiwsd-title br{
+		display: none;
+	}
 }
 
 @media(max-width: 575px){
@@ -145,7 +148,7 @@
 	}
 	.hiwsd-title{
 		text-align: center;
-		font-size: 25px;
+		font-size: 23px;
 		margin-bottom: 35px;
 	}
 	.hiwsd-subtitle{
@@ -160,7 +163,7 @@
 
 @media(max-width: 479px){
 	.hiwsd-title {
-	    font-size: 24px;
+	    font-size: 20px;
 	}
 
 }

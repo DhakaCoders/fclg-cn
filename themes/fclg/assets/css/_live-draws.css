@@ -26,7 +26,7 @@
 }
 .live-draws-page-hdr-con{
 	padding-top: 5px;
-	padding-bottom: 130px;
+	padding-bottom: 10px;
 }
 
 .live-draws-page-hdr-con strong{
@@ -67,4 +67,55 @@
 .fb-video-embaded iframe{
 	height: 380px!important;
 	width: 100%!important;
+	min-width: 100%!important;
 }
+.live-draws-page-hdr-con .fb-video.fb_iframe_widget.fb_iframe_widget_fluid_desktop > span{
+	height: 500px!important;
+}
+
+
+@media(max-width: 1499px){
+	.container{
+		max-width: 1200px;
+	}
+}
+
+@media(max-width: 1399px){
+
+}
+
+@media(max-width: 1299px){
+
+}
+
+@media(max-width: 1199px){
+
+
+}
+
+@media(max-width: 991px){
+
+	
+}
+
+@media(max-width: 639px){
+	.previous-draws-sec-grd-cntlr ul li{
+		width: 100%;
+	}
+}
+
+@media(max-width: 575px){
+
+
+}
+
+@media(max-width: 479px){
+
+
+}
+
+@media(max-width: 359px){
+
+}
+
+
