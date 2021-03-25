@@ -238,6 +238,14 @@ body.home .footer-tp-gallery-sec-wrp{
 }
 
 
+.privacy-policy .page-section{
+	background: #eaeaea;
+	padding-bottom: 40px;
+}
+.privacy-policy .sec-overlay-cntlr{
+	background: transparent;
+}
+
 @media(max-width: 1499px){
 	
 }

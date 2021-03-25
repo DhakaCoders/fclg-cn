@@ -338,58 +338,58 @@ if( $('.mainSlider').length ){
     });
 }
 
-var proTitleHeight = $('.fl-pro-grd-item-title').outerHeight();
+var proTitleHeight = $('.fl-pro-grd-item-title, .tab-link').outerHeight();
 var proTitleHeightHalf = (proTitleHeight/2);
 $('.title-angle').css({"border-top-width": proTitleHeightHalf, "border-right-width": proTitleHeightHalf, "border-bottom-width": proTitleHeightHalf});
 
 $( window ).resize(function() {
-  var proTitleHeight = $('.fl-pro-grd-item-title').outerHeight();
+  var proTitleHeight = $('.fl-pro-grd-item-title, .tab-link').outerHeight();
   var proTitleHeightHalf = (proTitleHeight/2);
   $('.title-angle').css({"border-top-width": proTitleHeightHalf, "border-right-width": proTitleHeightHalf, "border-bottom-width": proTitleHeightHalf});
 });
 
-
-$('.qty').each(function() {
-  var spinner = $(this),
-    input = spinner.find('input[type="number"]'),
-    btnUp = spinner.find('.plus'),
-    btnDown = spinner.find('.minus'),
-    min = 1,
-    max = input.attr('max');
-
-  btnUp.click(function() {
-    var oldValue = parseFloat(input.val());
-    if (oldValue <= max) {
-      var newVal = oldValue;
-    } else {
-      var newVal = oldValue + 1;
-    }
-    spinner.find("input").val(newVal);
-    spinner.find("input").trigger("change");
-  });
-
-  btnDown.click(function() {
-    var oldValue = parseFloat(input.val());
-    if (oldValue <= min) {
-      var newVal = oldValue;
-    } else {
-      var newVal = oldValue - 1;
-    }
-    spinner.find("input").val(newVal);
-    spinner.find("input").trigger("change");
-  });
-
-});
-
 $('div.fl-tabs button').click(function(){
     
-        var tab_id = $(this).attr('data-tab');
+    var tab_id = $(this).attr('data-tab');
 
-        $('div.fl-tabs button').removeClass('current');
-        $('.fl-tab-content').removeClass('current');
+    $('div.fl-tabs button').removeClass('current');
+    $('.fl-tab-content').removeClass('current');
 
-        $(this).addClass('current');
-        $("#"+tab_id).addClass('current');
+    $(this).addClass('current');
+    $("#"+tab_id).addClass('current');
+});
+
+if( $('.qty').length ){
+  $('.qty').each(function() {
+    var spinner = $(this),
+      input = spinner.find('input[type="number"]'),
+      btnUp = spinner.find('.plus'),
+      btnDown = spinner.find('.minus'),
+      min = 1,
+      max = input.attr('max');
+
+    btnUp.click(function() {
+      var oldValue = parseFloat(input.val());
+      if (oldValue <= max) {
+        var newVal = oldValue;
+      } else {
+        var newVal = oldValue + 1;
+      }
+      spinner.find("input").val(newVal);
+      spinner.find("input").trigger("change");
     });
 
+    btnDown.click(function() {
+      var oldValue = parseFloat(input.val());
+      if (oldValue <= min) {
+        var newVal = oldValue;
+      } else {
+        var newVal = oldValue - 1;
+      }
+      spinner.find("input").val(newVal);
+      spinner.find("input").trigger("change");
+    });
+
+  });
+}
 })(jQuery);
