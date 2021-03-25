@@ -392,5 +392,4 @@ $('div.fl-tabs button').click(function(){
         $("#"+tab_id).addClass('current');
     });
 
-
 })(jQuery);
